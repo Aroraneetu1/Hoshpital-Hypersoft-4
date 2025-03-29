@@ -1,0 +1,26 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="listswap.css" />
+<script src="jquery.listswap.js"></script>
+
+<select id="source_4" data-search="Search for options">
+    <option value="option_1">Option 1</option>
+    <option value="option_2">Why not option 2</option>
+    <option value="option_3">Here's another option 3</option>
+    <option value="option_4">What about option 4</option>
+    <option value="option_5">I'll go with option 5</option>
+    <option value="option_6">Let's stick to option 6</option>
+</select>
+<select id="destination_4"  data-search="Search for options">
+    <option value="option_6">Let's stick to option 6</option>
+</select>
+
+<script>
+$('#source_4, #destination_4').listswap({
+	truncate: true, 
+	height: 162,
+	label_add:'Add', 
+	label_remove: 'Remove',
+	add_class: 'list_ar', 
+});
+</script>

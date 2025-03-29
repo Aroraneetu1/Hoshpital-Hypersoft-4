@@ -1,0 +1,140 @@
+.listboxswap {
+	font-size: 14px;
+	color: #333333;
+}
+
+.listboxswap {
+    margin: 0 0 20px;
+}
+
+.listboxswap .source_wrapper,
+.listboxswap .listbox_controls,
+.listboxswap .destination_wrapper {
+	float:left;
+}
+
+.listboxswap .source_wrapper,
+.listboxswap .destination_wrapper {
+	width:40%;
+	overflow:hidden;
+}
+
+.listboxswap .listbox_controls {
+	width: 12%;
+    margin: 3.5% 4% 0;
+}
+
+.listboxswap .listbox_search {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 0;
+	padding: 10px;
+	color:#999999;
+	position:relative;
+}
+
+.listboxswap .listbox_search input {
+    width: 100%;
+	color:#999999;
+	border:none;
+	font-size: 14px;
+	height: 24px;
+}
+
+.listboxswap .listbox_search span.clear:before {
+	content:"\00d7";
+}
+
+.listboxswap .listbox_search span.clear {
+    display: block;
+    margin: 12px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+	cursor:pointer;
+	color:#CCCCCC;
+}
+
+.listboxswap .source_wrapper ul,
+.listboxswap .destination_wrapper ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    overflow-y: scroll;
+}
+.listboxswap ul li.listbox_option {
+	cursor: pointer;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.listboxswap ul li.listbox_option:hover {
+    background: #eeeeee;
+}
+.listboxswap ul li.listbox_option.selected {
+    background: #337ab7;
+    color: #ffffff;
+}
+.listboxswap .listbox_option span {
+    padding: 10px;
+	display: block;
+}
+
+
+.listboxswap .listbox_controls ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.listboxswap .listbox_controls ul li.add {
+	background-color: rgba(68, 157, 68, 0.9);
+}	
+.listboxswap .listbox_controls ul li.add:hover {
+	background-color: rgba(68, 157, 68, 1);
+}	
+.listboxswap .listbox_controls ul li.remove {
+	background-color: rgba(217, 83, 79, 0.9);
+}	
+.listboxswap .listbox_controls ul li.remove:hover {
+	background-color: rgba(217, 83, 79, 1);
+}
+.listboxswap .listbox_controls ul li {
+    cursor: pointer;
+    margin: 0 0 10px;
+    padding: 7px;
+    text-align: center;
+	color: #fff;
+}
+.listboxswap .listbox_controls ul li span.label{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.listboxswap .source_wrapper p,
+.listboxswap .destination_wrapper p {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 5px 10px;
+	background:#999999;
+	border-bottom: 1px solid #999999;
+}
+
+.listboxswap .listbox_clear {
+	clear:both;	
+}
+
+.listboxswap .truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listboxswap .listbox_controls .add span.label:after {
+	content: "\00a0\2192";
+}
+
+.listboxswap .listbox_controls .remove span.label:before {
+	content: "\2190\00a0";
+}
