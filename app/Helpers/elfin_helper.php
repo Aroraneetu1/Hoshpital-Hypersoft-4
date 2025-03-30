@@ -94,10 +94,11 @@ if (!function_exists('get_session_data')) {
 if (!function_exists('get_site_url')) {
     function get_site_url($uri = '')
     {
-        $url = base_url($uri); // Get base URL with optional URI
+        $uri = ltrim($uri, '/'); // Ensure no leading slash
+        $base_url = base_url();
 
-        if (strpos($url, 'localhost') !== false) {
-            return 'http://localhost:' . $_SERVER['SERVER_PORT'] . '/' . $uri;
+        if (strpos($base_url, 'localhost') !== false) {
+            return 'http://localhost/hypersofts/' . $uri;
         }
 
         return base_url($uri); // For production
@@ -401,20 +402,15 @@ function get_operation_total_amt($operation_id) {
     return $total;
 }
 
-function get_assets_url($uri=''){
+function get_assets_url($uri = '')
+{
+    $url = base_url();
 
-	$url = base_url();
+    if (strpos($url, 'localhost') !== false) {
+        return 'http://localhost/hypersofts/assets/' . ltrim($uri, '/');
+    }
 
-	if(strpos($url, 'localhost')){
-
-		return 'http://localhost:'.$_SERVER['SERVER_PORT'].'/assets/'.$uri;
-
-	}else{
-
-		return 'https://hospital.hypersofts.com/assets/'.$uri;
-
-	}
-
+    return base_url('assets/' . ltrim($uri, '/'));
 }
 
 function get_schedule_appointments_info($schedule)
@@ -594,6 +590,93 @@ function get_country_array(){
 
 	return $countries;
 
+}
+
+function get_debit_payment($id) {
+    $db = \Config\Database::connect();
+
+    $debitpay = [];
+    $query = $db->query("SELECT * FROM `appointments` as a JOIN payments as p ON a.id = p.appointment_id WHERE p.payment_type = 8 AND a.consumer_id = ?", [$id]);
+
+    if ($query->getNumRows() > 0) {
+        $debitpay = $query->getResult();
+    }
+
+    $remamt = 0;
+    if (!empty($debitpay)) {
+        foreach ($debitpay as $value) {
+            $debitpayamt = 0;
+            $query11 = $db->query("SELECT SUM(amount) as totdebit FROM `debit_payment` WHERE receipt_id = ?", [$value->receipt_id]);
+
+            if ($query11->getNumRows() > 0) {
+                $result11 = $query11->getRow();
+                $debitpayamt = $result11->totdebit ?? 0;
+            }
+
+            $payment_type_amount = $value->payment_type_amount ?? 0;
+
+            if ($payment_type_amount > $debitpayamt) {
+                $remamt += round($payment_type_amount - $debitpayamt);
+            }
+        }
+    }
+
+    return $remamt;
+}
+
+function get_row($table_name = '', $id_array = [])
+{
+    $db = \Config\Database::connect();
+    
+    if (!empty($id_array)) {
+        foreach ($id_array as $key => $value) {
+            $db->where($key, $value);
+        }
+    }
+
+    $query = $db->get($table_name);
+
+    return $query->getNumRows() > 0 ? $query->getRow() : false;
+}
+
+if (!function_exists('get_expense_total_amt')) {
+    function get_expense_total_amt($exid)
+    {
+        $db = \Config\Database::connect();
+        $query = $db->table('expense_items')->where('expense_id', $exid)->get();
+
+        $total = 0;
+        foreach ($query->getResult() as $item) {
+            $total += $item->subtotal;
+        }
+
+        return $total;
+    }
+}
+
+if (!function_exists('get_expense_totpaid_amt')) {
+    function get_expense_totpaid_amt($exid)
+    {
+        $db = \Config\Database::connect();
+        $query = $db->table('expense_payment')->where('expense_id', $exid)->get();
+
+        $total = 0;
+        foreach ($query->getResult() as $item) {
+            $total += $item->amount;
+        }
+
+        return $total;
+    }
+}
+
+if (!function_exists('get_expense_info')) {
+    function get_expense_info($exid)
+    {
+        $db = \Config\Database::connect();
+        $query = $db->table('expenses')->where('id', $exid)->get();
+
+        return ($query->getNumRows() > 0) ? $query->getRow() : null;
+    }
 }
 
 ?>

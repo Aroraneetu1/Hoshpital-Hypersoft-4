@@ -74,7 +74,7 @@
                     <h4 class="title text-center">User Login</h4>
                 </div>
                 <div class="card-content">
-                    <form action="" method="post">
+                    <form action="<?= get_site_url('login/admin') ?>" method="post">
 
                         <div class="row">
                             <div class="col-md-12">

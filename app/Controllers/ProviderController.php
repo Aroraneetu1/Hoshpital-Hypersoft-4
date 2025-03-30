@@ -42,7 +42,7 @@ class ProviderController extends BaseController
         $limit = 10;
         $users = $this->db->table('users')
             ->where(['role' => 'DOCTOR', 'is_delete' => 0])
-            ->orderBy('first_name', 'ASC')
+            ->orderBy('id', 'DESC')
             ->limit($limit, $offset)
             ->get();
 
@@ -74,6 +74,7 @@ class ProviderController extends BaseController
                 'room_number' => 'required',
                 'phone_number' => 'required',
                 'provider_education' => 'required',
+                'services'=>'required'
             ]);
 
             if ($this->validator->withRequest($this->request)->run()) {

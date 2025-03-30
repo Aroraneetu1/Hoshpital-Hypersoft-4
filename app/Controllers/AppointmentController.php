@@ -1032,13 +1032,13 @@ public function pay_result()
                     'payment_type_amount' => $payment_type_amount[$key],
                     'payment_datetime' => date('Y-m-d H:i:s a'),
                 ];
-                $this->elfin_model->insert('payments', $insert);
+                $this->elfin_model->insert_data('payments', $insert);
 
                 $this->bankTransactions($receipt_No, $value, $payment_type_amount[$key]);
             } else {
                 $update = ['payment_type_amount' => $payment_type_amount[$key]];
 
-                $this->elfin_model->update('payments', $update, [
+                $this->elfin_model->update_data('payments', $update, [
                     'receipt_id' => $receipt_No,
                     'payment_type' => $value,
                 ]);
@@ -1075,7 +1075,7 @@ public function lab_services()
                     'receipt_no' => 'LAB-' . $receipt_no,
                     'payment_status' => 0,
                 ];
-                $this->elfin_model->insert('lab_test', $insert);
+                $this->elfin_model->insert_data('lab_test', $insert);
             }
         }
     }
