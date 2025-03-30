@@ -1,6 +1,7 @@
 <?php 
 
-$permissions = unserialize(get_session_data('permissions'));
+
+$permissions = unserialize(get_session_data('permissions')) ?: [];
 
 $consumers = get_key_value_array('consumers', 'id', array('first_name', 'last_name'));
 
@@ -266,7 +267,8 @@ echo '</pre>';*/
 
                     		<td colspan="2">
 
-                                <?php if($permissions['visit'] == 1){?>
+                                <?php if (!empty($permissions) && isset($permissions['visit']) && $permissions['visit'] == 1) { ?>
+                                    
 
     								<?php if(in_array($row->status, array(1, 2))): ?>
 
@@ -411,7 +413,7 @@ echo '</pre>';*/
 	                    			</td>
 
 	                                <td>
-                                        <?php if($permissions['visit'] == 1){?>
+                                        <?php if (!empty($permissions) && isset($permissions['visit']) && $permissions['visit'] == 1) {?>
     	                                    <a onclick="$(this).parents('tr').remove();" href="javascript: void(0);" style="color: red;">
 
     	                                        <i class="fa fa-trash"></i>
@@ -463,7 +465,7 @@ echo '</pre>';*/
 
 	                            <td colspan="3">
 
-                                    <?php if($permissions['visit'] == 1){?>
+                                    <?php if (!empty($permissions) && isset($permissions['visit']) && $permissions['visit'] == 1) {?>
 
     	                                <a href="javascript: void(0);" class="btn btn-danger btn-sm pull-right" id="add-more-vital-btn">
 
@@ -704,7 +706,7 @@ function endVisit(appid){
         <div class="modal-content">
 
             <form action="<?php echo get_site_url("appointments/lab_services");?>" method="post">
-                <input type="hidden" name="appointment_id" value="<?php echo $this->uri->segment(3);?>">
+            <input type="hidden" name="appointment_id" value="<?= service('uri')->getSegment(3); ?>">
 
                 <div class="modal-header">
 

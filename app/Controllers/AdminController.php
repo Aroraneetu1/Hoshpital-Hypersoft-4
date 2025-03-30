@@ -24,17 +24,11 @@ class AdminController extends BaseController
         $this->elfin_model = new elfinModel();
         $this->db = Database::connect();
         set_timezone();
-    }
-
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
-    {
-        parent::initController($request, $response, $logger);
-        
         if (!get_the_current_user(1)) {
-            echo "dfdfgd";
             return redirect()->to(get_site_url('login/admin'))->send();
         }
     }
+
 
     public function index()
     {

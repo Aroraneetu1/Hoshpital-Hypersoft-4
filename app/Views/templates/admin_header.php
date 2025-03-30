@@ -492,7 +492,7 @@ input.form-control, select.form-control, textarea.form-control{
 
 <?php if(isset($permissions['settings']) && $permissions['settings'] == 1): ?>
     <li class="active">
-        <a class="loader-activate" href="<?= base_url('admin/settings'); ?>">
+        <a class="loader-activate" href="<?= get_site_url('admin/settings'); ?>">
             <i class="fa fa-gear"></i>
             Settings
         </a>

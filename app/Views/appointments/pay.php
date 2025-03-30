@@ -31,14 +31,14 @@ echo '</pre>';*/
 
     <form action="<?php echo get_site_url("appointments/pay_result");?>" method="post">
 
-        <input type="hidden" name="appointment_id" value="<?php echo $this->uri->segment(3);?>">
+        <input type="hidden" name="appointment_id" value="<?php echo service('uri')->getSegment(3); ?>">
        
             <div class="col-md-3">
                 <?php if(get_session_data('role') != 'Lab'){ ?>
                     <select class="form-control" id="receiptNo" name="receipt_No" required onchange="reflablist(this)">
                         <option value="">Select one</option>
                         <?php if(!empty($receipt_array) && is_array($receipt_array)){ foreach ($receipt_array as $key => $value) { ?>
-                            <option value="<?php echo $key;?>" <?php if($this->uri->segment(4) == $key){echo 'selected';}?>><?php echo $value;?></option>
+                            <option value="<?php echo $key; ?>" <?php if(service('uri')->getSegment(4) == $key) { echo 'selected'; } ?>><?php echo $value; ?></option>
                         <?php } } ?>
                     </select>
                 <?php } ?>
@@ -91,52 +91,67 @@ echo '</pre>';*/
                         </tr>
                     </thead>
                     <tbody>
-                        <? 
-                        $tot_need_to_pay = 0;
-                        $tot_price = 0;
-                        $tot_discunt = 0;
-                        if(!empty($rows)){ 
-                            foreach ($rows as $key => $value) { 
-                                if($value->payment_status == 0){ 
-                                    $tot_price += $value->lt_price;
-                                } 
-                                $tot_discunt += $value->discount; 
-                                $tot_need_to_pay += $value->lt_price; ?>
-                                
-                                <tr>
-                                    <td>
-                                        <?php if($value->payment_status == 0 || get_session_data('role') == 1){ ?>
-                                            <a href="<?php echo get_site_url("appointments/removelb/".$value->id."/".$value->appointment_id)?>"><i class="fa fa-trash text-danger fa-lg"></i></a>
-                                        <?php } ?>
-                                    </td>
-                                    <td><?php if(isset($products[$value->product_id])){ echo $products[$value->product_id]; }else{echo "Consultations Fee";}?></td>
-                                    <td>
-                                        <input type="text" id="price<?php echo $value->id?>" name="price[<?php echo $value->product_id?>]" class="form-control tprice" placeholder="Price" value="<?php echo round($value->lt_price,2)?>" readonly>
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control" name="discount[<?php echo $value->product_id?>]" placeholder="Discount" value="<?php echo round($value->discount,2)?>" data-orgprice="<?php echo $value->lt_price?>" onchange="applydiscount(this, <?php echo $value->id?>)" <?php if(get_session_data('role') == 'Lab'){ echo 'readonly'; }?>>
-                                    </td>
-                                    <!--<td>
-                                        <select class="form-control" name="paymentType[<?php echo $value->product_id?>]" required>
-                                            <option value="">Select One</option>
-                                            <?php/* if(!empty($paymentTypes)){ 
-                                                    foreach ($paymentTypes as $kk => $vv) { ?>
-                                                        <option value="<?php echo $vv->id;?>" <?php if($vv->id == $value->payment_type){echo 'selected';}?>><?php echo $vv->name;?></option>
-                                            <?php } } */?>
-                                        </select>
-                                    </td>-->
+    <?php 
+    $tot_need_to_pay = 0;
+    $tot_price = 0;
+    $tot_discunt = 0;
 
-
-                                    <td class="hidden">
-                                        <input type="text" class="form-control" name="result[<?php echo $value->product_id?>]" placeholder="Result" value="<?php echo $value->result?>" <?php if(get_session_data('role') == 'Receptionist'){ echo 'readonly'; }?>>
-                                    </td>
-                                    <td class="hidden">
-                                        <input type="text" class="form-control" placeholder="Normal Range" value="<?php echo $value->lt_normal_range?>" readonly>
-                                    </td>
-                                </tr>
-                            
-                        <?php } } ?>
-                    </tbody>
+    if (!empty($rows)) { 
+        foreach ($rows as $key => $value) { 
+            if ($value->payment_status == 0) { 
+                $tot_price += $value->lt_price;
+            } 
+            $tot_discunt += $value->discount; 
+            $tot_need_to_pay += $value->lt_price; 
+            ?>
+            
+            <tr>
+                <td>
+                    <?php if ($value->payment_status == 0 || get_session_data('role') == 1) { ?>
+                        <a href="<?php echo get_site_url("appointments/removelb/" . $value->id . "/" . $value->appointment_id)?>">
+                            <i class="fa fa-trash text-danger fa-lg"></i>
+                        </a>
+                    <?php } ?>
+                </td>
+                <td>
+                    <?php echo isset($products[$value->product_id]) ? $products[$value->product_id] : "Consultations Fee"; ?>
+                </td>
+                <td>
+                    <input type="text" id="price<?php echo $value->id?>" 
+                           name="price[<?php echo $value->product_id?>]" 
+                           class="form-control tprice" 
+                           placeholder="Price" 
+                           value="<?php echo round($value->lt_price,2)?>" 
+                           readonly>
+                </td>
+                <td>
+                    <input type="text" class="form-control" 
+                           name="discount[<?php echo $value->product_id?>]" 
+                           placeholder="Discount" 
+                           value="<?php echo round($value->discount,2)?>" 
+                           data-orgprice="<?php echo $value->lt_price?>" 
+                           onchange="applydiscount(this, <?php echo $value->id?>)" 
+                           <?php echo (get_session_data('role') == 'Lab') ? 'readonly' : ''; ?>>
+                </td>
+                <td class="hidden">
+                    <input type="text" class="form-control" 
+                           name="result[<?php echo $value->product_id?>]" 
+                           placeholder="Result" 
+                           value="<?php echo $value->result?>" 
+                           <?php echo (get_session_data('role') == 'Receptionist') ? 'readonly' : ''; ?>>
+                </td>
+                <td class="hidden">
+                    <input type="text" class="form-control" 
+                           placeholder="Normal Range" 
+                           value="<?php echo $value->lt_normal_range?>" 
+                           readonly>
+                </td>
+            </tr>
+        <?php 
+        } // End foreach
+    } // End if
+    ?>
+</tbody>
                     <tfoot>
                         <tr>
                             <td></td>
@@ -365,7 +380,7 @@ echo '</pre>';*/
 
     function reflablist(that){
 
-        var cururl = '<?php echo get_site_url("appointments/pay/".$this->uri->segment(3))?>';
+        var cururl = '<?php echo get_site_url("appointments/pay/".service('uri')->getSegment(3)) ?>';
 
         window.location.href = cururl+'/'+that.value;
     }

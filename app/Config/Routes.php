@@ -76,5 +76,51 @@ $routes->group('appointments', ['namespace' => 'App\Controllers'], function ($ro
     $routes->post('get_inpatients_products', 'AppointmentController::get_inpatients_products');
     $routes->post('remove_inpatients_products', 'AppointmentController::remove_inpatients_products');
     $routes->post('delete_inpatient', 'AppointmentController::delete_inpatient');
+    $routes->post('get_operation_products', 'AppointmentController::get_operation_products');
+    $routes->post('remove_operation_products', 'AppointmentController::remove_operation_products');
+    $routes->post('delete_operation', 'AppointmentController::delete_operation');
+    $routes->get('alloperation', 'AppointmentController::alloperation');
+    $routes->get('viewoperation/(:num)', 'AppointmentController::viewoperation/$1');
+    $routes->get('payoperation/(:num)', 'AppointmentController::payoperation/$1');
+    $routes->post('pay_operation', 'AppointmentController::pay_operation');
+    $routes->get('addoperation', 'AppointmentController::addoperation');
+    $routes->post('addoperation', 'AppointmentController::addoperation');
+    $routes->get('editoperation/(:num)', 'AppointmentController::editoperation/$1');
+    $routes->post('editoperation/(:num)', 'AppointmentController::editoperation/$1');
+    $routes->get('display_token', 'AppointmentController::display_token');
+    $routes->get('add', 'AppointmentController::add');
+    $routes->post('add', 'AppointmentController::add');
+    $routes->get('edit/(:num)', 'AppointmentController::edit/$1');
+    $routes->post('edit/(:num)', 'AppointmentController::edit/$1');
+    $routes->post('ajax_get_available_providers', 'AppointmentController::ajaxGetAvailableProviders');
+    $routes->post('cancel_visit', 'AppointmentController::cancel_visit');
+    $routes->get('removelb/(:num)/(:num)', 'AppointmentController::removelb/$1/$2');
+    $routes->post('lab_result', 'AppointmentController::lab_result');
+    $routes->post('pay-result', 'AppointmentController::pay_result');
+    $routes->post('lab_services', 'AppointmentController::lab_services');
+    $routes->get('laboratory/(:num)', 'AppointmentController::laboratory/$1');
+    $routes->get('pay/(:num)/(:any)', 'AppointmentController::pay/$1/$2');
+    $routes->get('pay/(:num)', 'AppointmentController::pay/$1');
+    $routes->get('receipt/(:num)', 'AppointmentController::receipt/$1');
+    $routes->post('end_visit', 'AppointmentController::end_visit');
+    $routes->get('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');
+    $routes->post('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');
+    $routes->get('visit/(:num)', 'AppointmentController::visit/$1');
+    
+});
+
+$routes->group('providers', function ($routes) {
+    $routes->get('schedules', 'ProviderController::schedules');
+    $routes->get('all/(:num)', 'ProviderController::all/$1');
+    $routes->get('all', 'ProviderController::all');
+    $routes->match(['get', 'post'], 'add', 'ProviderController::add');
+    $routes->get('delete/(:num)', 'ProviderController::delete/$1');
+    $routes->get('edit/(:num)', 'ProviderController::edit/$1'); 
+    $routes->post('edit/(:num)', 'ProviderController::edit/$1');
+    $routes->get('all_schedules', 'ProviderController::all_schedules');
+    $routes->match(['get', 'post'], 'add_schedule', 'ProviderController::add_schedule');
+    $routes->match(['get', 'post'], 'edit_schedule/(:num)', 'ProviderController::edit_schedule/$1');
+    $routes->get('delete_schedule/(:num)', 'ProviderController::delete_schedule/$1');
 
 });
+

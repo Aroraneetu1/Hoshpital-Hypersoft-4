@@ -41,7 +41,7 @@ echo '</pre>';*/
     <div class="form">
         <form action="<?php echo get_site_url("appointments/pay_operation");?>" method="post">
 
-            <input type="hidden" name="operation_id" value="<?php echo $this->uri->segment(3);?>">
+            <input type="hidden" name="operation_id" value="<?php echo service('uri')->getSegment(3); ?>">
             <input type="hidden" name="unique_id" value="<?php echo $operation->unique_id;?>">
             <input type="hidden" name="appion_id" value="<?php echo $operation->appointment_id;?>">
             

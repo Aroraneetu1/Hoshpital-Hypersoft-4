@@ -1,9 +1,14 @@
 <?php 
 
-$permissions = unserialize(get_session_data('permissions'));
+$permissions = unserialize(get_session_data('permissions')) ?? [];
+
+if (!is_array($permissions)) {
+    $permissions = [];
+}
 
 ?>
-<?php if($permissions['appointments'] == 0){  
+<?php 
+if (isset($permissions['appointments']) && $permissions['appointments'] == 0) {
 
     echo no_access_msg(); ?>
 
@@ -27,7 +32,7 @@ $permissions = unserialize(get_session_data('permissions'));
                         <?php endforeach; ?>
                     <?php endif; ?>    
                 </select>
-                <span class="error"><?php echo form_error("consumer_id"); ?></span>
+                <span class="error"><?php echo $validation->getError('consumer_id'); ?></span>
             </div>
         </div>
         <div class="form-group">
@@ -43,7 +48,7 @@ $permissions = unserialize(get_session_data('permissions'));
                         <?php endforeach; ?>    
                     <?php endif; ?>    
                 </select>    
-                <span class="error"><?php echo form_error("service_id"); ?></span>
+                <span class="error"><?php echo $validation->getError('service_id'); ?></span>
             </div>
         </div>
         <div class="form-group">
@@ -61,7 +66,7 @@ $permissions = unserialize(get_session_data('permissions'));
                         <tbody id="ajax-available-providers">
                         </tbody>
                     </table> 
-                <span class="error"><?php echo form_error("new-appointment"); ?></span>
+                    <span class="error"><?= isset($validation) ? $validation->getError('new-appointment') : '' ?></span>
             </div>
         </div>
         <div class="form-group">
@@ -95,7 +100,7 @@ function ajax_get_available_providers(){
     if(service_id == ''){
         $("#ajax-available-providers").html("<tr><td colspan='4'>No available time slots found.</td></tr>");
     }else{
-        $("#ajax-available-providers").html("<tr><td colspan='4'><img style='height: 40px;' src='<?php echo get_assets_url(); ?>images/cardiac-loader.gif'></td></tr>");
+        $("#ajax-available-providers").html("<tr><td colspan='4'><img style='height: 40px;' src='<?php echo base_url('images/cardiac-loader.gif'); ?>></td></tr>");
         $.ajax({
             type: "POST",
             url: "<?php echo get_site_url(); ?>appointments/ajax_get_available_providers",

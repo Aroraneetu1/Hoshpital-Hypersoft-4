@@ -1,0 +1,1814 @@
+CRITICAL - 2025-03-30 09:26:35 --> Error: Call to undefined function no_access_msg()
+[Method: GET, Route: appointments/alloperation]
+in APPPATH\Views\appointments\alloperation.php on line 16.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/alloperation', [], true)
+ 4 APPPATH\Controllers\AppointmentController.php(574): view('appointments/alloperation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->alloperation()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:27:29 --> Error: Call to a member function segment() on null
+[Method: GET, Route: appointments/alloperation]
+in APPPATH\Views\appointments\operation_div.php on line 5.
+ 1 APPPATH\Views\appointments\alloperation.php(23): include()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\alloperation.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/alloperation', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(574): view('appointments/alloperation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->alloperation()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:29:02 --> Error: Call to undefined function get_operation_total_amt()
+[Method: GET, Route: appointments/alloperation]
+in APPPATH\Views\appointments\alloperation.php on line 41.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/alloperation', [], true)
+ 4 APPPATH\Controllers\AppointmentController.php(574): view('appointments/alloperation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->alloperation()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:44:57 --> ErrorException: Undefined property: App\Controllers\AppointmentController::$form_validation
+[Method: GET, Route: appointments/addoperation]
+in APPPATH\Controllers\AppointmentController.php on line 577.
+ 1 APPPATH\Controllers\AppointmentController.php(577): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AppointmentController::$form_validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\AppointmentController.php', 577)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->addoperation()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:52:58 --> Error: Call to a member function setRules() on null
+[Method: POST, Route: appointments/addoperation]
+in APPPATH\Controllers\AppointmentController.php on line 581.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->addoperation()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:53:12 --> Error: Call to a member function setRules() on null
+[Method: POST, Route: appointments/addoperation]
+in APPPATH\Controllers\AppointmentController.php on line 581.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->addoperation()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 09:56:52 --> Error: Call to a member function setRules() on null
+[Method: POST, Route: appointments/editoperation/3]
+in APPPATH\Controllers\AppointmentController.php on line 651.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->editoperation('3')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 04:28:06 --> ErrorException: Could not check compatibility between App\Controllers\AppointmentController::initController(App\Controllers\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+[Method: GET, Route: appointments/editoperation/3]
+in APPPATH\Controllers\AppointmentController.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-30 04:28:08 --> ErrorException: Could not check compatibility between App\Controllers\AppointmentController::initController(App\Controllers\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+[Method: GET, Route: appointments/editoperation/3]
+in APPPATH\Controllers\AppointmentController.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-30 04:28:10 --> ErrorException: Could not check compatibility between App\Controllers\AppointmentController::initController(App\Controllers\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+[Method: GET, Route: appointments/editoperation/3]
+in APPPATH\Controllers\AppointmentController.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-30 09:59:55 --> Error: Call to a member function segment() on null
+[Method: GET, Route: appointments/payoperation/3]
+in APPPATH\Views\appointments\payoperation.php on line 44.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/payoperation', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/payoperation')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(556): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->payoperation('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:02:21 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: appointments/pay_operation]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AppointmentController.php(531): CodeIgniter\Model->update('payments', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay_operation()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:03:00 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: appointments/pay_operation]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AppointmentController.php(531): CodeIgniter\Model->update('payments', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay_operation()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:06:57 --> Error: Call to undefined method App\Controllers\AppointmentController::bankTransactions()
+[Method: POST, Route: appointments/pay_operation]
+in APPPATH\Controllers\AppointmentController.php on line 525.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay_operation()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:08:06 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+[Method: POST, Route: appointments/pay_operation]
+in APPPATH\Controllers\AppointmentController.php on line 747.
+ 1 APPPATH\Controllers\AppointmentController.php(525): App\Controllers\AppointmentController->bankTransactions('OPS-250303224929', '10', '5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay_operation()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:10:12 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+[Method: POST, Route: appointments/pay_operation]
+in APPPATH\Controllers\AppointmentController.php on line 748.
+ 1 APPPATH\Controllers\AppointmentController.php(525): App\Controllers\AppointmentController->bankTransactions('OPS-250316075843', '2', '55')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay_operation()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 10:17:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4 in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\AppointmentController.php(774): App\Models\ElfinModel->get_result('appointments', Array, 'id DESC')
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\AppointmentController->display_token()
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-30 10:17:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+[Method: GET, Route: appointments/display_token]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `status` = :status:
+OR id DESC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AppointmentController.php(774): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->display_token()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:17:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `appointments`
+WHERE `status` = 2
+OR id DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `appointments`
+WHERE `status` = 2
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `status` = :status:
+OR id DESC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AppointmentController.php(774): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->display_token()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:17:02 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `appointments`
+WHERE `status` = 2
+OR id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `appointments`
+WHERE `status` = 2
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `appointments`
+WHERE `status` = 2
+OR id DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `status` = :status:
+OR id DESC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AppointmentController.php(774): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->display_token()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 10:24:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4 in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\AppointmentController.php(849): App\Models\ElfinModel->get_result('consumers', Array, 'first_name ASC')
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-30 10:24:06 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+[Method: GET, Route: appointments/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AppointmentController.php(849): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:24:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AppointmentController.php(849): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:24:06 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AppointmentController.php(849): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 10:27:31 --> mysqli_sql_exception: Unknown column 'first_name' in 'order clause' in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\AppointmentController.php(850): App\Models\ElfinModel->get_result('service_types', Array, Array, Array)
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-30 10:27:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'first_name' in 'order clause'
+[Method: GET, Route: appointments/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `service_types`
+WHERE `is_delete` = :is_delete:
+ORDER BY `first_name` ASC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AppointmentController.php(850): App\Models\ElfinModel->get_result('service_types', [...], [], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:27:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'first_name' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `service_types`
+WHERE `is_delete` = 0
+ORDER BY `first_name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `service_types`
+WHERE `is_delete` = 0
+ORDER BY `first_name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `service_types`
+WHERE `is_delete` = :is_delete:
+ORDER BY `first_name` ASC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AppointmentController.php(850): App\Models\ElfinModel->get_result('service_types', [...], [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:27:31 --> [Caused by] mysqli_sql_exception: Unknown column 'first_name' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `service_types`
+WHERE `is_delete` = 0
+ORDER BY `first_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `service_types`
+WHERE `is_delete` = 0
+ORDER BY `first_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `service_types`
+WHERE `is_delete` = 0
+ORDER BY `first_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `service_types`
+WHERE `is_delete` = :is_delete:
+ORDER BY `first_name` ASC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AppointmentController.php(850): App\Models\ElfinModel->get_result('service_types', [...], [], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:28:12 --> Error: Call to undefined function form_error()
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 30.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(854): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:29:34 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 30.
+ 1 APPPATH\Views\appointments\add.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(854): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:30:33 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 30.
+ 1 APPPATH\Views\appointments\add.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(854): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:32:32 --> ErrorException: Undefined property: CodeIgniter\View\View::$validation
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 30.
+ 1 APPPATH\Views\appointments\add.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(854): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:33:35 --> ErrorException: Undefined property: CodeIgniter\View\View::$validation
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 30.
+ 1 APPPATH\Views\appointments\add.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:33:45 --> Error: Call to undefined function form_error()
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:34:05 --> Error: Call to undefined function form_error()
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 64.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:34:23 --> Error: Call to undefined function get_assets_url()
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 98.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:41:07 --> ErrorException: Undefined array key 1
+[Method: POST, Route: appointments/add]
+in APPPATH\Controllers\AppointmentController.php on line 794.
+ 1 APPPATH\Controllers\AppointmentController.php(794): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\AppointmentController.php', 794)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:45:05 --> ErrorException: Undefined array key 1
+[Method: POST, Route: appointments/add]
+in APPPATH\Controllers\AppointmentController.php on line 794.
+ 1 APPPATH\Controllers\AppointmentController.php(794): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\AppointmentController.php', 794)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:57:49 --> Error: Call to undefined function App\Controllers\get_schedule_appointments_info()
+[Method: POST, Route: appointments/ajax_get_available_providers]
+in APPPATH\Controllers\AppointmentController.php on line 910.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->ajaxGetAvailableProviders()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:11:52 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/laboratory/264]
+in APPPATH\Views\appointments\laboratory.php on line 121.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/laboratory', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/laboratory')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1100): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->laboratory('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:12:36 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/laboratory/264]
+in APPPATH\Views\appointments\laboratory.php on line 121.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/laboratory', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/laboratory')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1100): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->laboratory('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:14:57 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: appointments/laboratory/264]
+in APPPATH\Views\appointments\laboratory.php on line 33.
+ 1 APPPATH\Views\appointments\laboratory.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\laboratory.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\laboratory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/laboratory', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/laboratory')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1100): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->laboratory('264')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:15:45 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: appointments/laboratory/264]
+in APPPATH\Views\appointments\laboratory.php on line 56.
+ 1 APPPATH\Views\appointments\laboratory.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\laboratory.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\laboratory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/laboratory', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/laboratory')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1100): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->laboratory('264')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:16:20 --> Error: Call to undefined function get_print_header()
+[Method: GET, Route: appointments/laboratory/264]
+in APPPATH\Views\appointments\laboratory.php on line 169.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/laboratory', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/laboratory')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1100): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->laboratory('264')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:18:17 --> Error: Call to undefined function get_service_products()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 11.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:20:33 --> Error: Call to undefined function get_service_products()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 11.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:20:36 --> Error: Call to undefined function get_service_products()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 11.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:20:37 --> Error: Call to undefined function get_service_products()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 11.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:21:56 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 269.
+ 1 APPPATH\Views\appointments\visit.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 269)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:25:38 --> ErrorException: Undefined array key "visit"
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 270.
+ 1 APPPATH\Views\appointments\visit.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visit"', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 270)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:26:30 --> ErrorException: Undefined array key "visit"
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 416.
+ 1 APPPATH\Views\appointments\visit.php(416): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visit"', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 416)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:26:49 --> ErrorException: Undefined array key "visit"
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 468.
+ 1 APPPATH\Views\appointments\visit.php(468): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visit"', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 468)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:27:01 --> ErrorException: Undefined variable $modal
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 685.
+ 1 APPPATH\Views\appointments\visit.php(685): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modal', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 685)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1228): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:31:55 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Controllers\AppointmentController.php on line 1250.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:34:13 --> Error: Call to undefined function get_appointments_result()
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\modal_view_visits_by_patient.php on line 51.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/modal_view_visits_by_patient', [], true)
+ 4 APPPATH\Controllers\AppointmentController.php(1258): view('appointments/modal_view_visits_by_patient', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:35:25 --> ErrorException: Undefined property: CodeIgniter\View\View::$uri
+[Method: GET, Route: appointments/visit/268/start]
+in APPPATH\Views\appointments\visit.php on line 709.
+ 1 APPPATH\Views\appointments\visit.php(709): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php', 709)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\visit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/visit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/visit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(1263): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268', 'start')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:38:17 --> ErrorException: Attempt to read property "id" on bool
+[Method: GET, Route: appointments/visit/258]
+in APPPATH\Controllers\AppointmentController.php on line 1194.
+ 1 APPPATH\Controllers\AppointmentController.php(1194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on bool', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\AppointmentController.php', 1194)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('258')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:40:16 --> ErrorException: Attempt to read property "unique_id" on bool
+[Method: GET, Route: appointments/visit/258]
+in APPPATH\Controllers\AppointmentController.php on line 1205.
+ 1 APPPATH\Controllers\AppointmentController.php(1205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "unique_id" on bool', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\AppointmentController.php', 1205)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('258')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:42:11 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 6.
+ 1 APPPATH\Views\appointments\add.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:42:23 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 6.
+ 1 APPPATH\Views\appointments\add.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:43:42 --> ErrorException: Undefined array key "appointments"
+[Method: GET, Route: appointments/add]
+in APPPATH\Views\appointments\add.php on line 10.
+ 1 APPPATH\Views\appointments\add.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointments"', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\appointments\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('appointments/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\AppointmentController.php(855): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:55:02 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 125.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:56:13 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 130.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:57:03 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 130.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:57:06 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 125.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:57:30 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 128.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:58:40 --> ParseError: Unmatched '}'
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 129.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 14:59:47 --> Error: Call to a member function segment() on null
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 34.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:00:49 --> Error: Call to a member function segment() on null
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 41.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:01:43 --> Error: Call to a member function segment() on null
+[Method: GET, Route: appointments/pay/264]
+in APPPATH\Views\appointments\pay.php on line 383.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('appointments/pay', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('appointments/pay')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AppointmentController.php(1120): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 15:02:35 --> mysqli_sql_exception: Unknown column 'receipt_no' in 'where clause' in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\AppointmentController.php(1111): App\Models\ElfinModel->get_result('payments', Array)
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264', 'CON-25031607023...')
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-30 15:02:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'receipt_no' in 'where clause'
+[Method: GET, Route: appointments/pay/264/CON-250316070230]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `appointment_id` = :appointment_id:
+AND `receipt_no` = :receipt_no:
+AND `pay_from` = :pay_from:', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AppointmentController.php(1111): App\Models\ElfinModel->get_result('payments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264', 'CON-250316070230')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:02:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'receipt_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `appointment_id` = \'264\'
+AND `receipt_no` = \'CON-250316070230\'
+AND `pay_from` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `appointment_id` = \'264\'
+AND `receipt_no` = \'CON-250316070230\'
+AND `pay_from` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `appointment_id` = :appointment_id:
+AND `receipt_no` = :receipt_no:
+AND `pay_from` = :pay_from:', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AppointmentController.php(1111): App\Models\ElfinModel->get_result('payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264', 'CON-250316070230')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:02:35 --> [Caused by] mysqli_sql_exception: Unknown column 'receipt_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `payments`
+WHERE `appointment_id` = \'264\'
+AND `receipt_no` = \'CON-250316070230\'
+AND `pay_from` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `appointment_id` = \'264\'
+AND `receipt_no` = \'CON-250316070230\'
+AND `pay_from` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `appointment_id` = \'264\'
+AND `receipt_no` = \'CON-250316070230\'
+AND `pay_from` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `appointment_id` = :appointment_id:
+AND `receipt_no` = :receipt_no:
+AND `pay_from` = :pay_from:', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AppointmentController.php(1111): App\Models\ElfinModel->get_result('payments', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->pay('264', 'CON-250316070230')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 10:18:32 --> Error: Call to undefined function App\Controllers\set_timezone()
+[Method: GET, Route: providers/all]
+in APPPATH\Controllers\ProviderController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\ProviderController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:49:08 --> Error: Call to undefined function App\Controllers\get_theme_pagination()
+[Method: GET, Route: providers/all]
+in APPPATH\Controllers\ProviderController.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:49:48 --> ErrorException: Array to string conversion
+[Method: GET, Route: providers/all]
+in APPPATH\Views\providers\all.php on line 60.
+ 1 APPPATH\Views\providers\all.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\all.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\all.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/all', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/all')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(60): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:54:13 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: providers/all]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\ProviderController.php(52): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:54:19 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: providers/all]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\ProviderController.php(52): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:54:59 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: providers/all]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\ProviderController.php(52): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:55:17 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap" is not a valid Pager template.
+[Method: GET, Route: providers/all]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Controllers\ProviderController.php(52): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13, 'bootstrap')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:55:25 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: providers/all]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\ProviderController.php(52): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 15:55:34 --> ErrorException: Array to string conversion
+[Method: GET, Route: providers/all]
+in APPPATH\Views\providers\all.php on line 60.
+ 1 APPPATH\Views\providers\all.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\all.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\all.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/all', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/all')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(60): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:01:51 --> ErrorException: Undefined property: App\Controllers\ProviderController::$pagination
+[Method: GET, Route: providers/all]
+in APPPATH\Controllers\ProviderController.php on line 50.
+ 1 APPPATH\Controllers\ProviderController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProviderController::$pagination', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\ProviderController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:08:37 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/edit/35]
+in APPPATH\Views\providers\edit.php on line 14.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(170): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit('35')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:11:53 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/edit/35]
+in APPPATH\Views\providers\edit.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(170): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit('35')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:14:23 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: providers/edit/35]
+in APPPATH\Views\providers\edit.php on line 16.
+ 1 APPPATH\Views\providers\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/edit', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/edit')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(170): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit('35')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:16:07 --> Error: Call to undefined function get_country_array()
+[Method: GET, Route: providers/edit/35]
+in APPPATH\Views\providers\edit.php on line 57.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(171): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit('35')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:16:42 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 25.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(105): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:20:01 --> TypeError: CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\ProviderController.php on line 79
+[Method: POST, Route: providers/add]
+in SYSTEMPATH\Model.php on line 786.
+ 1 APPPATH\Controllers\ProviderController.php(79): CodeIgniter\Model->insert('users', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:23:38 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 111.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(105): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:29:39 --> ErrorException: Undefined property: App\Controllers\ProviderController::$elfin_model
+[Method: GET, Route: providers/all_schedules]
+in APPPATH\Controllers\ProviderController.php on line 184.
+ 1 APPPATH\Controllers\ProviderController.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProviderController::$elfin_model', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Controllers\\ProviderController.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:30:58 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ElfinModel::order_by
+[Method: GET, Route: providers/all_schedules]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ProviderController.php(187): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:33:06 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: GET, Route: providers/all_schedules]
+in APPPATH\Controllers\ProviderController.php on line 186.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:33:14 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ElfinModel::order_by
+[Method: GET, Route: providers/all_schedules]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ProviderController.php(187): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 16:34:04 --> mysqli_sql_exception: Unknown column 'e_date' in 'where clause' in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-30 16:34:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e_date' in 'where clause'
+[Method: GET, Route: providers/all_schedules]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `e_date` >= :e_date:
+AND `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:34:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `e_date` >= \'2025-03-30\'
+AND `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `e_date` >= \'2025-03-30\'
+AND `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `e_date` >= :e_date:
+AND `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:34:04 --> [Caused by] mysqli_sql_exception: Unknown column 'e_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `users`
+WHERE `e_date` >= \'2025-03-30\'
+AND `is_delete` = 0
+ORDER BY `start_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `e_date` >= \'2025-03-30\'
+AND `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `e_date` >= \'2025-03-30\'
+AND `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `e_date` >= :e_date:
+AND `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+ERROR - 2025-03-30 16:34:42 --> mysqli_sql_exception: Unknown column 'start_time' in 'order clause' in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+#8 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+#9 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-30 16:34:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_time' in 'order clause'
+[Method: GET, Route: providers/all_schedules]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:34:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:34:42 --> [Caused by] mysqli_sql_exception: Unknown column 'start_time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `users`
+WHERE `is_delete` = 0
+ORDER BY `start_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `is_delete` = 0
+ORDER BY `start_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `is_delete` = :is_delete:
+ORDER BY `start_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProviderController.php(192): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:35:01 --> ErrorException: Attempt to read property "s_date" on array
+[Method: GET, Route: providers/all_schedules]
+in APPPATH\Views\providers\schedules\all.php on line 25.
+ 1 APPPATH\Views\providers\schedules\all.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "s_date" on array', 'C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\schedules\\all.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\providers\\schedules\\all.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/schedules/all', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/schedules/all')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(198): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:37:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: GET, Route: providers/all_schedules]
+in APPPATH\Controllers\ProviderController.php on line 186.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->all_schedules()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:39:24 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: providers/edit_schedule/34]
+in APPPATH\Controllers\ProviderController.php on line 259.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit_schedule('34')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:41:54 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/edit_schedule/34]
+in APPPATH\Views\providers\schedules\edit.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/schedules/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/schedules/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(300): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->edit_schedule('34')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:43:02 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: providers/add_schedule]
+in APPPATH\Controllers\ProviderController.php on line 200.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add_schedule()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:43:27 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/add_schedule]
+in APPPATH\Views\providers\schedules\add.php on line 29.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/schedules/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/schedules/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(243): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add_schedule()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:43:54 --> Error: Call to undefined function form_error()
+[Method: GET, Route: providers/add_schedule]
+in APPPATH\Views\providers\schedules\add.php on line 29.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/schedules/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/schedules/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(243): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add_schedule()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')
+CRITICAL - 2025-03-30 16:44:25 --> TypeError: CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\codeiginator\hospital.hypersofts.com\app\Controllers\ProviderController.php on line 239
+[Method: POST, Route: providers/add_schedule]
+in SYSTEMPATH\Model.php on line 786.
+ 1 APPPATH\Controllers\ProviderController.php(239): CodeIgniter\Model->insert('provider_schedules', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add_schedule()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeiginator\\hospital.hypersofts.com\\public\\index.php')

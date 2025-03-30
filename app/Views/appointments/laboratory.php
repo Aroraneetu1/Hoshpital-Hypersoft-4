@@ -29,9 +29,7 @@ echo '</pre>';*/
 <div class="form">
 
     <form action="<?php echo get_site_url("appointments/lab_result");?>" method="post">
-
-        <input type="hidden" name="appointment_id" value="<?php echo $this->uri->segment(3);?>">
-       
+        <input type="hidden" name="appointment_id" value="<?= service('uri')->getSegment(3) ?>">
             <div class="col-md-3">
                 <!-- <?php /*if(get_session_data('role') != 'Lab'){ ?>
                     <select class="form-control" id="receiptNo">
@@ -55,7 +53,7 @@ echo '</pre>';*/
 
             <div class="col-md-7">
                 
-                <?php if($this->uri->segment(3) !=''){ ?>
+            <?php if(service('uri')->getSegment(3) != '') { ?>
 
                     <?php if(!in_array(0, $chk_payment_status)){ ?>
 
@@ -89,37 +87,39 @@ echo '</pre>';*/
                         </tr>
                     </thead>
                     <tbody>
-                        <? 
+                        <?php 
                         $tot_price = 0;
                         $tot_discunt = 0;
-                        if(!empty($rows)){ 
+                        if (!empty($rows)) { 
                             foreach ($rows as $key => $value) { 
-                                if($value->payment_status == 0){ $tot_price += $value->lt_price;} 
-                                $tot_discunt += $value->discount; ?>
-                                
-                                <tr>
-                                    <td>
-                                        <?php if($value->payment_status == 0 || get_session_data('role') == 1){ ?>
-                                            <a href="<?php echo get_site_url("appointments/removelb/".$value->id."/".$value->appointment_id)?>"><i class="fa fa-trash text-danger fa-lg"></i></a>
-                                        <?php } ?>
-                                    </td>
-                                    <td><?php echo $products[$value->product_id]?></td>
-                                    <!-- <td>
-                                        <input type="text" id="price<?php echo $value->id?>" name="price[<?php echo $value->product_id?>]" class="form-control" placeholder="Price" value="<?php echo number_format($value->lt_price,2)?>" readonly>
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control" name="discount[<?php echo $value->product_id?>]" placeholder="Discount" value="<?php echo number_format($value->discount,2)?>" data-orgprice="<?php echo $value->lt_price?>" onchange="applydiscount(this, <?php echo $value->id?>)" <?php if(get_session_data('role') == 'Lab'){ echo 'readonly'; }?>>
-                                    </td> -->
-                                    <td>
-                                        <input type="text" class="form-control" name="result[<?php echo $value->product_id?>]" placeholder="Result" value="<?php echo $value->result?>" <?php if(get_session_data('role') == 'Receptionist'){ echo 'readonly'; }?>>
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control" placeholder="Normal Range" value="<?php echo $value->lt_normal_range?>" readonly>
-                                    </td>
-                                </tr>
-                            
-                        <?php } } ?>
+                                if ($value->payment_status == 0) { 
+                                    $tot_price += $value->lt_price;
+                                } 
+                                $tot_discunt += $value->discount;
+                        ?>
+                            <tr>
+                                <td>
+                                    <?php if ($value->payment_status == 0 || get_session_data('role') == 1) { ?>
+                                        <a href="<?php echo get_site_url("appointments/removelb/" . $value->id . "/" . $value->appointment_id) ?>">
+                                            <i class="fa fa-trash text-danger fa-lg"></i>
+                                        </a>
+                                    <?php } ?>
+                                </td>
+                                <td><?php echo $products[$value->product_id] ?></td>
+                                <td>
+                                    <input type="text" class="form-control" name="result[<?php echo $value->product_id ?>]" placeholder="Result" value="<?php echo $value->result ?>" 
+                                    <?php if (get_session_data('role') == 'Receptionist') { echo 'readonly'; } ?>>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Normal Range" value="<?php echo $value->lt_normal_range ?>" readonly>
+                                </td>
+                            </tr>
+                        <?php 
+                            }  // **Closing foreach loop**
+                        }  // **Closing if condition**
+                        ?>
                     </tbody>
+
                     <!-- <tfoot>
                         <tr>
                             <td></td>
