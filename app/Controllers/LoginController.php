@@ -9,11 +9,11 @@ class LoginController extends Controller
 {
     public function __construct()
     {
-        helper(['url', 'form','email','elfin_helper']); // Load necessary helpers
-        $this->elfin_model = model('App\Models\ElfinModel'); // Assuming you have an ElfinModel
+        helper(['url', 'form','email','elfin_helper']); 
+        $this->elfin_model = model('App\Models\ElfinModel');
         $this->session = Services::session();
         $this->validation = Services::validation();
-        // Assuming you have a function to set timezone in your helper or library.
+        
         if (function_exists('set_timezone')) {
             set_timezone();
         }

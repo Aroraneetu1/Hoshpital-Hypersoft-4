@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/', 'Home::index');
+$routes->get('/', 'LoginController::admin');
 $routes->get('login/admin', 'LoginController::admin');
 $routes->post('login/admin', 'LoginController::admin');
 $routes->match(['get', 'post'], 'login/forgotpassword', 'LoginController::forgotpassword');
@@ -24,14 +24,14 @@ $routes->group('admin', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('change_timezone', 'AdminController::change_timezone');
     $routes->get('logout', 'AdminController::logout');
     $routes->get('report', 'AdminController::report');
-    $routes->get('debit-payment', 'AdminController::debitPayment');
-    $routes->get('sales-report', 'AdminController::salesReport');
-    $routes->get('expense-report', 'AdminController::expenseReport');
-    $routes->get('doctor-report', 'AdminController::doctorReport');
-    $routes->get('management-report', 'AdminController::managementReport');
-    $routes->get('service-report', 'AdminController::serviceReport');
-    $routes->get('payment-report', 'AdminController::paymentReport');
-    $routes->get('sms-payment-report', 'AdminController::smsPaymentReport');
+    $routes->get('debit_payment', 'AdminController::debitPayment');
+    $routes->get('sales_report', 'AdminController::salesReport');
+    $routes->get('expense_report', 'AdminController::expenseReport');
+    $routes->get('doctor_report', 'AdminController::doctorReport');
+    $routes->get('management_report', 'AdminController::managementReport');
+    $routes->get('service_report', 'AdminController::serviceReport');
+    $routes->get('payment_report', 'AdminController::paymentReport');
+    $routes->get('sms-payment_report', 'AdminController::smsPaymentReport');
     $routes->get('payment_types', 'AdminController::paymentTypes');
     $routes->get('add_payment_types', 'AdminController::addPaymentType');
     $routes->post('add_payment_types', 'AdminController::addPaymentType');
@@ -96,7 +96,7 @@ $routes->group('appointments', ['namespace' => 'App\Controllers'], function ($ro
     $routes->post('cancel_visit', 'AppointmentController::cancel_visit');
     $routes->get('removelb/(:num)/(:num)', 'AppointmentController::removelb/$1/$2');
     $routes->post('lab_result', 'AppointmentController::lab_result');
-    $routes->post('pay-result', 'AppointmentController::pay_result');
+    $routes->post('pay_result', 'AppointmentController::pay_result');
     $routes->post('lab_services', 'AppointmentController::lab_services');
     $routes->get('laboratory/(:num)', 'AppointmentController::laboratory/$1');
     $routes->get('pay/(:num)/(:any)', 'AppointmentController::pay/$1/$2');
@@ -122,5 +122,60 @@ $routes->group('providers', function ($routes) {
     $routes->match(['get', 'post'], 'edit_schedule/(:num)', 'ProviderController::edit_schedule/$1');
     $routes->get('delete_schedule/(:num)', 'ProviderController::delete_schedule/$1');
 
+});
+
+$routes->group('consumers', function ($routes) {
+    $routes->get('all', 'ConsumerController::all');
+    $routes->get('export_excel', 'ConsumerController::export_excel');
+    $routes->get('add', 'ConsumerController::add');
+    $routes->post('add', 'ConsumerController::add');
+    $routes->get('edit/(:num)', 'ConsumerController::edit/$1');
+    $routes->post('edit/(:num)', 'ConsumerController::edit/$1');
+    $routes->get('history/(:num)', 'ConsumerController::history/$1');
+    $routes->get('pay/(:num)', 'ConsumerController::pay/$1');
+    $routes->post('debitpay', 'ConsumerController::debitpay');
+    $routes->get('change_status/(:num)/(:num)', 'ConsumerController::change_status/$1/$2');
+});
+
+$routes->group('expenses', function ($routes) {
+    $routes->get('all', 'ExpenseController::all');
+    $routes->get('expensepayment', 'ExpenseController::expensePayment');
+    $routes->post('pay_now', 'ExpenseController::payNow');
+    $routes->get('add', 'ExpenseController::add');
+    $routes->post('add', 'ExpenseController::add');
+    $routes->post('cancel', 'ExpenseController::cancel');
+    $routes->match(['get', 'post'], 'edit/(:num)', 'ExpenseController::edit/$1');
+    $routes->post('remove_expense_products', 'ExpenseController::remove_expense_products');
+    $routes->post('get_expense_peoducts', 'ExpenseController::get_expense_products');
+    $routes->get('view/(:num)', 'ExpenseController::view/$1');
+});
+
+$routes->group('finance', function($routes) {
+    $routes->get('all', 'FinanceController::all');
+    $routes->match(['get', 'post'], 'add', 'FinanceController::add');
+    $routes->match(['get', 'post'], 'edit/(:num)', 'FinanceController::edit/$1');
+    $routes->post('ajax_btransections', 'FinanceController::ajax_btransections');
+    $routes->get('transactions', 'FinanceController::transactions');
+    $routes->post('btransfr_now', 'FinanceController::btransfr_now');
+    $routes->get('income_statement', 'FinanceController::income_statement');
+
+});
+
+$routes->group('service_types', function ($routes) {
+    $routes->get('all/(:num)', 'ServiceTypeController::all/$1');
+    $routes->get('all', 'ServiceTypeController::all');
+    $routes->get('add', 'ServiceTypeController::add'); 
+    $routes->post('add', 'ServiceTypeController::add'); 
+    $routes->get('edit/(:num)', 'ServiceTypeController::edit/$1');
+    $routes->post('edit/(:num)', 'ServiceTypeController::edit/$1');
+});
+
+$routes->group('supplier', function ($routes) {
+    $routes->get('all', 'SupplierController::all');
+    $routes->get('add', 'SupplierController::add');
+    $routes->post('add', 'SupplierController::add');
+    $routes->get('edit/(:num)', 'SupplierController::edit/$1');
+    $routes->post('edit/(:num)', 'SupplierController::edit/$1');
+    $routes->post('cancel', 'SupplierController::cancel');
 });
 

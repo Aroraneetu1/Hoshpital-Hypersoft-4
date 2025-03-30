@@ -1,97 +1,100 @@
 <?php 
+
 $permissions = unserialize(get_session_data('permissions'));
 $validation = $validation ?? \Config\Services::validation();
 ?>
-
-<style>
+<style type="text/css">
     .form-group {
         margin-bottom: 10px;
     }
 </style>
 
-<?php if ($permissions['doctors'] == 0): ?>
-    <?= no_access_msg(); ?>
-<?php else: ?>
+<?php if($permissions['doctors'] == 0){  
+
+    echo no_access_msg(); ?>
+
+
+<?php }else{ ?>
 
 <div class="form">
-    <form action="" method="post" class="cmxform form-horizontal form-example">
+    <form onsubmit="$('#destination_services option').prop('selected', true);" action="" class="cmxform form-horizontal form-example" method="post">
         <div class="form-group">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>First Name</label>
-                <input type="text" class="form-control" name="first_name" value="<?= old('first_name') ?>"> 
-                <span class="error"><?= $validation->getError('first_name') ?></span>
+                <input type="text" class="form-control" name="first_name" value="<?php echo set_value("first_name"); ?>"> 
+                <span class="error"><?php echo $validation->getError("first_name"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Last Name</label>
-                <input type="text" class="form-control" name="last_name" value="<?= old('last_name') ?>"> 
-                <span class="error"><?= $validation->getError('last_name') ?></span>
+                <input type="text" class="form-control" name="last_name" value="<?php echo set_value("last_name"); ?>"> 
+                <span class="error"><?php echo $validation->getError("last_name"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Gender</label>
                 <select class="form-control" name="gender"> 
-                    <option <?= old('gender') == "M" ? "selected" : "" ?> value="M">Male</option>
-                    <option <?= old('gender') == "F" ? "selected" : "" ?> value="F">Female</option>
+                    <option <?php echo set_select("gender", "M"); ?> value="M">Male</option>
+                    <option <?php echo set_select("gender", "F"); ?> value="F">Female</option>
                 </select>
-                <span class="error"><?= $validation->getError('gender') ?></span>
+                <span class="error"><?php echo $validation->getError("gender"); ?></span>
             </div>
         </div>
         <div class="form-group">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>DOB</label>
-                <input type="text" class="form-control" name="dob" value="<?= old('dob') ?>">
-                <span class="error"><?= $validation->getError('dob') ?></span>
+                <input type="text" class="form-control" name="dob" value="<?php echo set_value("dob"); ?>">
+                <span class="error"><?php echo $validation->getError("dob"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Email ID</label>
-                <input type="text" class="form-control" name="email" value="<?= old('email') ?>"> 
-                <span class="error"><?= $validation->getError('email') ?></span>
+                <input type="text" class="form-control" name="email" value="<?php echo set_value("email"); ?>"> 
+                <span class="error"><?php echo $validation->getError("email"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Address</label>
-                <input type="text" class="form-control" name="address" value="<?= old('address') ?>"> 
-                <span class="error"><?= $validation->getError('address') ?></span>
+                <input type="text" class="form-control" name="address" value="<?php echo set_value("address"); ?>"> 
+                <span class="error"><?php echo $validation->getError("address"); ?></span>
             </div>
         </div>
         <div class="form-group">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>State/Province</label>
-                <input type="text" class="form-control" name="state" value="<?= old('state') ?>"> 
-                <span class="error"><?= $validation->getError('state') ?></span>
+                <input type="text" class="form-control" name="state" value="<?php echo set_value("state"); ?>"> 
+                <span class="error"><?php echo $validation->getError("state"); ?></span>
             </div>
             <?php $countries = get_country_array(); ?>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Country</label>
                 <select class="form-control" name="country">
                     <option selected="selected" value="SO">Somalia</option>
-                    <?php foreach ($countries as $key => $value): ?>
-                        <option <?= old('country') == $key ? "selected" : "" ?> value="<?= $key; ?>">
-                            <?= $value; ?>
+                    <?php foreach($countries as $key => $value): ?>
+                        <option <?php echo set_select("country", $key); ?> value="<?php echo $key; ?>">
+                            <?php echo $value; ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
-                <span class="error"><?= $validation->getError('country') ?></span>
+                <span class="error"><?php echo $validation->getError("country"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Postal Code</label>
-                <input type="text" class="form-control" name="postal_code" value="<?= old('postal_code') ?>"> 
-                <span class="error"><?= $validation->getError('postal_code') ?></span>
+                <input type="text" class="form-control" name="postal_code" value="<?php echo set_value("postal_code"); ?>"> 
+                <span class="error"><?php echo $validation->getError("postal_code"); ?></span>
             </div>
         </div>
         <div class="form-group">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Room Number</label>
-                <input type="text" class="form-control" name="room_number" value="<?= old('room_number') ?>"> 
-                <span class="error"><?= $validation->getError('room_number') ?></span>
+                <input type="text" class="form-control" name="room_number" value="<?php echo set_value("room_number"); ?>"> 
+                <span class="error"><?php echo $validation->getError("room_number"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Phone Number</label>
-                <input type="text" class="form-control" name="phone_number" value="<?= old('phone_number') ?>"> 
-                <span class="error"><?= $validation->getError('phone_number') ?></span>
+                <input type="text" class="form-control" name="phone_number" value="<?php echo set_value("phone_number"); ?>"> 
+                <span class="error"><?php echo $validation->getError("phone_number"); ?></span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xm-12">
                 <label>Education</label>
-                <input type="text" class="form-control" name="provider_education" value="<?= old('provider_education') ?>"> 
-                <span class="error"><?= $validation->getError('provider_education') ?></span>
+                <input type="text" class="form-control" name="provider_education" value="<?php echo set_value("provider_education"); ?>"> 
+                <span class="error"><?php echo $validation->getError("provider_education"); ?></span>
             </div>
         </div>
         <div class="form-group">
@@ -122,7 +125,7 @@ $validation = $validation ?? \Config\Services::validation();
    </form>
 </div>
 
-<?php endif; ?>
+<?php } ?>
 
 <script type="text/javascript">
 $(document).ready(function(){

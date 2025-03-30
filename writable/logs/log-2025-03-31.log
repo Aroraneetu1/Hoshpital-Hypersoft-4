@@ -1,0 +1,868 @@
+CRITICAL - 2025-03-31 00:23:08 --> Error: Call to undefined method Config\View::item()
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 5.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:23:57 --> Error: Call to undefined function form_error()
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 21.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:24:21 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 21.
+ 1 APPPATH\Views\finance\badd.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:24:57 --> ErrorException: Undefined variable $paymenttypes
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 66.
+ 1 APPPATH\Views\finance\badd.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paymenttypes', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:25:12 --> ErrorException: Undefined variable $paymenttypes
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 66.
+ 1 APPPATH\Views\finance\badd.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paymenttypes', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:29:00 --> TypeError: CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\hypersofts\app\Controllers\FinanceController.php on line 71
+[Method: POST, Route: finance/add]
+in SYSTEMPATH\Model.php on line 786.
+ 1 APPPATH\Controllers\FinanceController.php(71): CodeIgniter\Model->insert('banks', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:29:20 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:29:32 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:04 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:05 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:15 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:17 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:30 --> ErrorException: Undefined variable $paymenttypes
+[Method: GET, Route: finance/add]
+in APPPATH\Views\finance\badd.php on line 66.
+ 1 APPPATH\Views\finance\badd.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paymenttypes', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\badd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/badd', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/badd')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(83): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:33 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:30:41 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(36): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:32:00 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(38): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:33:30 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('Nisi minim dolorum i', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(38): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:40:17 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: finance/all]
+in APPPATH\Views\finance\ball.php on line 46.
+ 1 APPPATH\Views\finance\ball.php(46): number_format('', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\ball.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/ball', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/ball')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(38): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:46:49 --> ErrorException: Undefined property: App\Controllers\FinanceController::$elfin_model
+[Method: POST, Route: finance/btransfr_now]
+in APPPATH\Controllers\FinanceController.php on line 220.
+ 1 APPPATH\Controllers\FinanceController.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FinanceController::$elfin_model', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\FinanceController.php', 220)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->btransfr_now()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:47:27 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: GET, Route: finance/transactions]
+in APPPATH\Controllers\FinanceController.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->transactions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:49:03 --> ErrorException: Undefined variable $from
+[Method: GET, Route: finance/transactions]
+in APPPATH\Views\finance\transactions.php on line 30.
+ 1 APPPATH\Views\finance\transactions.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $from', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\transactions.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\finance\\transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/transactions', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('finance/transactions')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(190): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->transactions()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:42 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:43 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:44 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:44 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:44 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:44 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:50:44 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:56:03 --> ErrorException: Undefined property: App\Controllers\FinanceController::$elfin_model
+[Method: GET, Route: finance/income_statement]
+in APPPATH\Controllers\FinanceController.php on line 262.
+ 1 APPPATH\Controllers\FinanceController.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FinanceController::$elfin_model', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\FinanceController.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-31 00:56:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 6 in C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hypersofts\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hypersofts\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hypersofts\app\Controllers\FinanceController.php(262): App\Models\ElfinModel->get_result('appointments', Array, 'id DESC')
+#6 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+#7 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+#8 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hypersofts\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hypersofts\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hypersofts\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-31 00:56:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 6
+[Method: GET, Route: finance/income_statement]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `created` >= :created:
+AND `created` <= :created.1:
+AND `status` != :status:
+OR id DESC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FinanceController.php(262): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:56:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `appointments`
+WHERE `created` >= \'2025-03-31\'
+AND `created` <= \'2025-03-31\'
+AND `status` != 0
+OR id DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `appointments`
+WHERE `created` >= \'2025-03-31\'
+AND `created` <= \'2025-03-31\'
+AND `status` != 0
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `created` >= :created:
+AND `created` <= :created.1:
+AND `status` != :status:
+OR id DESC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FinanceController.php(262): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:56:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `appointments`
+WHERE `created` >= \'2025-03-31\'
+AND `created` <= \'2025-03-31\'
+AND `status` != 0
+OR id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `appointments`
+WHERE `created` >= \'2025-03-31\'
+AND `created` <= \'2025-03-31\'
+AND `status` != 0
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `appointments`
+WHERE `created` >= \'2025-03-31\'
+AND `created` <= \'2025-03-31\'
+AND `status` != 0
+OR id DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `appointments`
+WHERE `created` >= :created:
+AND `created` <= :created.1:
+AND `status` != :status:
+OR id DESC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FinanceController.php(262): App\Models\ElfinModel->get_result('appointments', [...], 'id DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:57:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "finance/income_statement.php"
+[Method: GET, Route: finance/income_statement]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('finance/income_statement.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('finance/income_statement', [], true)
+ 3 APPPATH\Views\templates\admin_template.php(2): view('finance/income_statement')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 7 APPPATH\Controllers\FinanceController.php(311): view('templates/admin_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:58:20 --> ErrorException: Undefined variable $sales1
+[Method: GET, Route: finance/income_statement]
+in APPPATH\Views\admin\income_statement.php on line 16.
+ 1 APPPATH\Views\admin\income_statement.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sales1', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\admin\\income_statement.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\admin\\income_statement.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/income_statement', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('admin/income_statement')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\FinanceController.php(311): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->income_statement()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 00:59:56 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: finance/ajax_btransections]
+in APPPATH\Controllers\FinanceController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FinanceController->ajax_btransections()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:10:30 --> ErrorException: Undefined variable $db
+[Method: POST, Route: providers/add]
+in APPPATH\Controllers\ProviderController.php on line 100.
+ 1 APPPATH\Controllers\ProviderController.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\ProviderController.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:10:43 --> ErrorException: Undefined variable $id
+[Method: POST, Route: providers/add]
+in APPPATH\Controllers\ProviderController.php on line 100.
+ 1 APPPATH\Controllers\ProviderController.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\ProviderController.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:18:43 --> Error: Call to undefined function form_error()
+[Method: POST, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 25.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ProviderController.php(107): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:19:19 --> ErrorException: Undefined variable $validation
+[Method: POST, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 25.
+ 1 APPPATH\Views\providers\add.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(107): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:20:27 --> ErrorException: Undefined variable $row
+[Method: POST, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 4.
+ 1 APPPATH\Views\providers\add.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(107): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:21:13 --> ErrorException: Undefined variable $db
+[Method: POST, Route: providers/add]
+in APPPATH\Controllers\ProviderController.php on line 65.
+ 1 APPPATH\Controllers\ProviderController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\ProviderController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:21:24 --> ErrorException: Undefined variable $id
+[Method: POST, Route: providers/add]
+in APPPATH\Controllers\ProviderController.php on line 65.
+ 1 APPPATH\Controllers\ProviderController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\ProviderController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:22:25 --> ErrorException: Undefined variable $row
+[Method: POST, Route: providers/add]
+in APPPATH\Views\providers\add.php on line 4.
+ 1 APPPATH\Views\providers\add.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\providers\\add.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('providers/add', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('providers/add')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ProviderController.php(107): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProviderController->add()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:31:25 --> Error: Call to undefined function form_error()
+[Method: GET, Route: service_types/add]
+in APPPATH\Views\service_types\add.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('service_types/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('service_types/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ServiceTypeController.php(72): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:36:27 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: service_types/all]
+in APPPATH\Views\service_types\all.php on line 44.
+ 1 APPPATH\Views\service_types\all.php(44): number_format('Dolore aliquam labor', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\service_types\\all.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('service_types/all', [], true)
+ 5 APPPATH\Views\templates\admin_template.php(2): view('service_types/all')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 9 APPPATH\Controllers\ServiceTypeController.php(38): view('templates/admin_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->all()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:39:16 --> Error: Call to undefined function form_error()
+[Method: GET, Route: service_types/edit/28]
+in APPPATH\Views\service_types\edit.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('service_types/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('service_types/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\ServiceTypeController.php(110): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->edit('28')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-31 01:44:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4 in C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hypersofts\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hypersofts\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hypersofts\app\Controllers\SupplierController.php(32): App\Models\ElfinModel->get_result('supplier', Array, 'id DESC')
+#6 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(933): App\Controllers\SupplierController->all()
+#7 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+#8 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hypersofts\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hypersofts\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hypersofts\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-31 01:44:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+[Method: GET, Route: supplier/all]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `supplier`
+WHERE `is_delete` = :is_delete:
+OR id DESC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\SupplierController.php(32): App\Models\ElfinModel->get_result('supplier', [...], 'id DESC')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->all()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:44:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `supplier`
+WHERE `is_delete` = 0
+OR id DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `supplier`
+WHERE `is_delete` = 0
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `supplier`
+WHERE `is_delete` = :is_delete:
+OR id DESC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\SupplierController.php(32): App\Models\ElfinModel->get_result('supplier', [...], 'id DESC')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->all()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:44:44 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `supplier`
+WHERE `is_delete` = 0
+OR id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `supplier`
+WHERE `is_delete` = 0
+OR id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `supplier`
+WHERE `is_delete` = 0
+OR id DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `supplier`
+WHERE `is_delete` = :is_delete:
+OR id DESC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SupplierController.php(32): App\Models\ElfinModel->get_result('supplier', [...], 'id DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->all()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:45:27 --> Error: Call to undefined function form_error()
+[Method: GET, Route: supplier/add]
+in APPPATH\Views\supplier\add.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('supplier/add', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('supplier/add')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\SupplierController.php(65): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->add()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:47:08 --> TypeError: CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\hypersofts\app\Controllers\SupplierController.php on line 57
+[Method: POST, Route: supplier/add]
+in SYSTEMPATH\Model.php on line 786.
+ 1 APPPATH\Controllers\SupplierController.php(57): CodeIgniter\Model->insert('supplier', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:47:38 --> Error: Call to undefined function form_error()
+[Method: GET, Route: supplier/edit/8]
+in APPPATH\Views\supplier\edit.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('supplier/edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('supplier/edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\SupplierController.php(99): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SupplierController->edit('8')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 01:58:54 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, CodeIgniter\HTTP\IncomingRequest given, called in C:\xampp\htdocs\hypersofts\system\Controller.php on line 182
+[Method: POST, Route: appointments/add]
+in SYSTEMPATH\Validation\Validation.php on line 588.
+ 1 SYSTEMPATH\Controller.php(182): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\Controller.php(136): CodeIgniter\Controller->setValidator(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 3 APPPATH\Controllers\AppointmentController.php(790): CodeIgniter\Controller->validate(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-31 02:01:06 --> ErrorException: Undefined variable $validation
+[Method: POST, Route: appointments/add]
+in APPPATH\Controllers\AppointmentController.php on line 791.
+ 1 APPPATH\Controllers\AppointmentController.php(791): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 791)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

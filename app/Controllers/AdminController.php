@@ -8,7 +8,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use Config\Database;
-use App\Models\elfinModel;
+use App\Models\ElfinModel;
 
 class AdminController extends BaseController
 {
@@ -21,7 +21,7 @@ class AdminController extends BaseController
         helper(['url', 'form','email','elfin_helper']);
 
         $this->session = session(); 
-        $this->elfin_model = new elfinModel();
+        $this->elfin_model = new ElfinModel();
         $this->db = Database::connect();
         set_timezone();
         if (!get_the_current_user(1)) {
