@@ -679,4 +679,10 @@ if (!function_exists('get_expense_info')) {
     }
 }
 
+function get_date_format(){
+
+	return 'd F Y';
+
+}
+
 ?>

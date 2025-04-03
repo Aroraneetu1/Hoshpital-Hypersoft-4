@@ -175,7 +175,7 @@ class ProviderController extends BaseController
 
     public function delete($id = '')
     {
-        $this->elfin_model->update_data('provider_schedules', ['is_delete' => 1], ['id' => $id]);
+        $this->elfin_model->update_data('users', ['is_delete' => 1], ['id' => $id]);
         $this->session->setFlashdata('success_msg', 'Deleted successfully.');
         return redirect()->to(get_site_url('providers/all'));
     }
@@ -304,7 +304,7 @@ class ProviderController extends BaseController
     public function delete_schedule($id = null)
     {
         if ($id) {
-            $this->elfin_model->update('provider_schedules', ['is_delete' => 1], ['id' => $id]);
+            $this->elfin_model->update_data('provider_schedules', ['is_delete' => 1], ['id' => $id]);
             return redirect()->to(get_site_url('providers/all_schedules'))->with('success_msg', 'Deleted successfully.');
         }
 

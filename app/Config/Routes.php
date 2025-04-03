@@ -18,6 +18,8 @@ $routes->group('admin', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('profile', 'AdminController::profile');
     $routes->post('profile', 'AdminController::profile');
     $routes->get('user_list', 'AdminController::user_list');
+    $routes->get('user_staff', 'AdminController::user_staff');
+    $routes->post('user_staff', 'AdminController::user_staff');
     $routes->get('edit_user/(:num)', 'AdminController::edit_user/$1');
     $routes->post('edit_user/(:num)', 'AdminController::edit_user/$1');
     $routes->get('delete/(:num)', 'AdminController::delete/$1');
@@ -102,6 +104,7 @@ $routes->group('appointments', ['namespace' => 'App\Controllers'], function ($ro
     $routes->get('pay/(:num)/(:any)', 'AppointmentController::pay/$1/$2');
     $routes->get('pay/(:num)', 'AppointmentController::pay/$1');
     $routes->get('receipt/(:num)', 'AppointmentController::receipt/$1');
+    $routes->get('receipt/(:num)/lab/(:segment)', 'AppointmentController::receipt/$1/$2');
     $routes->post('end_visit', 'AppointmentController::end_visit');
     $routes->get('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');
     $routes->post('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');

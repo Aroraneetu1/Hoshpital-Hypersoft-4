@@ -1134,7 +1134,7 @@ public function end_visit()
 {
     $id = $this->request->getPost('id');
 
-    $this->elfin_model->update('appointments', [
+    $this->elfin_model->update_data('appointments', [
         'status' => 3,
         'visited_end_time' => time(),
     ], ['id' => $id]);
@@ -1144,7 +1144,7 @@ public function end_visit()
 
 public function visit($id = '', $flag = '') {
     if ($flag == 'start') {
-        $this->elfin_model->update('appointments', [
+        $this->elfin_model->update_data('appointments', [
             'status' => 2,
             'visited_date' => date('Y-m-d'),
             'visited_start_time' => time(),
@@ -1193,7 +1193,7 @@ public function visit($id = '', $flag = '') {
         if ($datainpatients) {
             $room_rate_amt = get_operation_total_amt($datainpatients->id);
         } else {
-            $room_rate_amt = 0; // Default value if no record is found
+            $room_rate_amt = 0; 
         }
 
 
@@ -1243,7 +1243,7 @@ public function visit($id = '', $flag = '') {
                 $update['status'] = 3;
                 $update['visited_end_time'] = time();
             }
-            $this->elfin_model->update('appointments', $update, $where);
+            $this->elfin_model->update_data('appointments', $update, $where);
             if ($mode == 'end') {
                 session()->setFlashdata('success_msg', 'Visit has been ended successfully.');
                 return redirect()->to(get_site_url('appointments/visit/' . $id . '/view'));

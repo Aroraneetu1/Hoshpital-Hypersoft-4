@@ -1,3 +1,8 @@
+<?php 
+
+$validation = $validation ?? \Config\Services::validation();
+?>
+
 <div class="form">
 
     <form action="" class="cmxform form-horizontal form-example" method="post">

@@ -149,7 +149,7 @@ class AdminController extends BaseController
 
             $db->table('users')->insert($data);
             session()->setFlashdata('success_msg', 'User added successfully.');
-            return redirect()->to(get_site_url('admin/user-list'));
+            return redirect()->to(get_site_url('admin/user_list'));
         }
 
         return view('templates/admin_template', [

@@ -270,30 +270,24 @@ echo '</pre>';*/
                                 <?php if (!empty($permissions) && isset($permissions['visit']) && $permissions['visit'] == 1) { ?>
                                     
 
-    								<?php if(in_array($row->status, array(1, 2))): ?>
+    								<?php if (in_array($row->status, [1, 2])): ?>
 
-    									<!-- <button value="end" name="mode" type="submit" class="btn btn-warning btn-sm pull-right">
-    									    End Visit
-    									</button> -->
+                                        <?php if ($inpatient_data == 1): ?>
+                                            <button type="button" onclick="endVisit_warning('In-patients payment not paid yet!')" class="btn btn-warning btn-sm pull-right">
+                                                End Visit
+                                            </button>
+                                        <?php elseif ($operation_data == 1): ?>
+                                            <button type="button" onclick="endVisit_warning('Operation payment not paid yet!')" class="btn btn-warning btn-sm pull-right">
+                                                End Visit
+                                            </button>
+                                        <?php else: ?>
+                                            <button type="button" onclick="endVisit(<?php echo $row->id; ?>)" class="btn btn-warning btn-sm pull-right">
+                                                End Visit
+                                            </button>
+                                        <?php endif; ?>
 
-                                        <?if($inpatient_data == 1){?>
-
-                                            <button type="button" onclick="endVisit_warning('In-patients payment not paid yet!')" class="btn btn-warning btn-sm pull-right">End Visit</button>
-
-                                        <? }else if($operation_data == 1){?>
-
-                                            <button type="button" onclick="endVisit_warning('Operation payment not paid yet!')" class="btn btn-warning btn-sm pull-right">End Visit</button>
-
-                                        <? }else{ ?>
-
-                                            <button type="button" onclick="endVisit(<?php echo $row->id;?>)" class="btn btn-warning btn-sm pull-right">End Visit </button>
-
-                                        <? }?>
-
-    								<?php endif; ?>
-
-    								
-
+                                        <?php endif; ?>
+                                        
     								<button value="save" name="mode" type="submit" class="btn btn-success btn-sm pull-right">
 
     								    Save Changes
