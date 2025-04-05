@@ -859,7 +859,7 @@ public function display_token()
     {
         $data['row'] = $this->elfin_model->get_row('appointments', ['id' => $id]);
 
-        if ($this->request->getMethod() == 'post') {
+        if ($this->request->is('post')) {
             $rules = [
                 'consumer_id' => 'required',
                 'service_id' => 'required',
@@ -1142,8 +1142,9 @@ public function end_visit()
     return $this->response->setJSON(1);
 }
 
-public function visit($id = '', $flag = '') {
-    if ($flag == 'start') {
+public function visit($id = '', $flag = '')
+{
+    if ($flag === 'start') {
         $this->elfin_model->update_data('appointments', [
             'status' => 2,
             'visited_date' => date('Y-m-d'),
@@ -1154,119 +1155,107 @@ public function visit($id = '', $flag = '') {
     $data['row'] = $this->elfin_model->get_row('appointments', ['id' => $id]);
 
     $inpatient_data = 0;
-    if ($data['row']->inpatient_chkbx == 1) {
+    if ($data['row'] && $data['row']->inpatient_chkbx == 1) {
         $consumer_id = $data['row']->consumer_id;
         $appid = $id;
 
         $datainpatients = $this->elfin_model->get_row('inpatients', ['patient_id' => $consumer_id, 'appointment_id' => $appid]);
-        $room_rate_amt = $datainpatients->room_rate_amt;
-        $room_rate_amt += get_inpatients_total_amt($datainpatients->id);
+        if ($datainpatients) {
+            $room_rate_amt = $datainpatients->room_rate_amt;
+            $room_rate_amt += get_inpatients_total_amt($datainpatients->id);
+            $tot_need_topay = $room_rate_amt;
 
-        $tot_need_topay = $room_rate_amt;
+            $paymentss = $this->elfin_model->get_result('payments', [
+                'appointment_id' => $appid,
+                'receipt_id' => $datainpatients->uniq_id,
+                'pay_from' => 'INP',
+            ]);
 
-        $paymentss = $this->elfin_model->get_result('payments', [
-            'appointment_id' => $appid,
-            'receipt_id' => $datainpatients->uniq_id,
-            'pay_from' => 'INP'
-        ]);
+            $total_paid_yet = 0;
+            if (!empty($paymentss)) {
+                foreach ($paymentss as $vv) {
+                    $total_paid_yet += $vv->payment_type_amount;
+                }
+            }
 
-        $total_paid_yet = 0;
-        if (!empty($paymentss)) {
-            foreach ($paymentss as $kk => $vv) {
-                $total_paid_yet += $vv->payment_type_amount;
+            if ($tot_need_topay > $total_paid_yet) {
+                $inpatient_data = 1;
             }
         }
-
-        if ($tot_need_topay > $total_paid_yet) {
-            $inpatient_data = 1;
-        }
     }
-
     $data['inpatient_data'] = $inpatient_data;
 
     $operation_data = 0;
-    if ($data['row']->operationward_chkbx == 1) {
+    if ($data['row'] && $data['row']->operationward_chkbx == 1) {
         $consumer_id = $data['row']->consumer_id;
         $appid = $id;
 
         $datainpatients = $this->elfin_model->get_row('operation', ['patient_id' => $consumer_id, 'appointment_id' => $appid]);
         if ($datainpatients) {
             $room_rate_amt = get_operation_total_amt($datainpatients->id);
-        } else {
-            $room_rate_amt = 0; 
-        }
+            $tot_need_topay = $room_rate_amt;
 
-
-        $tot_need_topay = $room_rate_amt;
-
-        $paymentss = [];
-        if ($datainpatients) {
             $paymentss = $this->elfin_model->get_result('payments', [
                 'appointment_id' => $appid,
                 'receipt_id' => $datainpatients->unique_id,
-                'pay_from' => 'OPS'
+                'pay_from' => 'OPS',
             ]);
-        }
 
-        $total_paid_yet = 0;
-        if (!empty($paymentss)) {
-            foreach ($paymentss as $kk => $vv) {
-                $total_paid_yet += $vv->payment_type_amount;
+            $total_paid_yet = 0;
+            if (!empty($paymentss)) {
+                foreach ($paymentss as $vv) {
+                    $total_paid_yet += $vv->payment_type_amount;
+                }
+            }
+
+            if ($tot_need_topay > $total_paid_yet) {
+                $operation_data = 1;
             }
         }
-
-        if ($tot_need_topay > $total_paid_yet) {
-            $operation_data = 1;
-        }
     }
-
     $data['operation_data'] = $operation_data;
 
     $data['lab_rows'] = $this->elfin_model->get_result('lab_test', ['appointment_id' => $id]);
 
-    if ($this->request->getMethod() == 'post') {
-        $rules = ['mode' => 'required'];
+    $validation = \Config\Services::validation();
+    $validation->setRules(['mode' => 'required']);
 
-        if ($this->validate($rules)) {
-            $mode = $this->request->getPost('mode');
-            $where = ['id' => $id];
-            $update = [
-                'remark' => $this->request->getPost('remark'),
-                'notes' => $this->request->getPost('notes'),
-                'operationward_chkbx' => $this->request->getPost('operationward_chkbx'),
-                'inpatient_chkbx' => $this->request->getPost('inpatient_chkbx'),
-                'emergency_chkbx' => $this->request->getPost('emergency_chkbx'),
-                'vital_index' => json_encode($this->request->getPost('vital_index')),
-                'vital_value' => json_encode($this->request->getPost('vital_value')),
-            ];
-            if ($mode == 'end') {
-                $update['status'] = 3;
-                $update['visited_end_time'] = time();
-            }
-            $this->elfin_model->update_data('appointments', $update, $where);
-            if ($mode == 'end') {
-                session()->setFlashdata('success_msg', 'Visit has been ended successfully.');
-                return redirect()->to(get_site_url('appointments/visit/' . $id . '/view'));
-            } else {
-                session()->setFlashdata('success_msg', 'Saved successfully.');
-                return redirect()->to(get_site_url('appointments/visit/' . $id));
-            }
+    if ($this->request->is('post') && $validation->withRequest($this->request)->run()) {
+        $mode = $this->request->getPost('mode');
+        $update = [
+            'remark' => $this->request->getPost('remark'),
+            'notes' => $this->request->getPost('notes'),
+            'operationward_chkbx' => $this->request->getPost('operationward_chkbx'),
+            'inpatient_chkbx' => $this->request->getPost('inpatient_chkbx'),
+            'emergency_chkbx' => $this->request->getPost('emergency_chkbx'),
+            'vital_index' => json_encode($this->request->getPost('vital_index')),
+            'vital_value' => json_encode($this->request->getPost('vital_value')),
+        ];
+
+        if ($mode == 'end') {
+            $update['status'] = 3;
+            $update['visited_end_time'] = time();
         }
+
+        $this->elfin_model->update_data('appointments', $update, ['id' => $id]);
+
+        session()->setFlashdata('success_msg', $mode == 'end' ? 'Visit has been ended successfully.' : 'Saved successfully.');
+        return redirect()->to(get_site_url('appointments/visit/' . $id . ($mode == 'end' ? '/view' : '')));
     }
 
-    $appointments = $this->db->table('appointments')
-    ->where('consumer_id', $data['row']->consumer_id)
-    ->whereNotIn('vital_index', ['NULL', '[]', ''])
-    ->whereNotIn('vital_value', ['NULL', '[]', ''])
-    ->orderBy('visited_start_time', 'DESC')
-    ->get()
-    ->getResult();
-
-    $data['modal'] = view('appointments/modal_view_visits_by_patient', ['appointments' => $appointments]);
+    $builder = $this->db->table('appointments');
+    $builder->where('consumer_id', $data['row']->consumer_id);
+    $builder->whereNotIn('vital_index', ['NULL', '[]', '']);
+    $builder->whereNotIn('vital_value', ['NULL', '[]', '']);
+    $builder->orderBy('visited_start_time', 'DESC');
+    $data['modal'] = view('appointments/modal_view_visits_by_patient', [
+        'appointments' => $builder->get()->getResult()
+    ]);
 
     $data['template'] = 'appointments/visit';
     $data['menu'] = 'appointments';
     $data['active'] = 'visit';
+
     return view('templates/admin_template', $data);
 }
 

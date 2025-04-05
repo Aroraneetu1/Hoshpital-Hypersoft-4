@@ -1,0 +1,230 @@
+CRITICAL - 2025-04-05 12:06:03 --> ErrorException: Attempt to read property "room_rate_amt" on bool
+[Method: GET, Route: appointments/visit/268]
+in APPPATH\Controllers\AppointmentController.php on line 1162.
+ 1 APPPATH\Controllers\AppointmentController.php(1162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "room_rate_amt" on bool', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 1162)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 12:09:03 --> ErrorException: Attempt to read property "id" on bool
+[Method: GET, Route: appointments/visit/268]
+in APPPATH\Controllers\AppointmentController.php on line 1169.
+ 1 APPPATH\Controllers\AppointmentController.php(1169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on bool', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 1169)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 12:17:21 --> ErrorException: Attempt to read property "id" on bool
+[Method: GET, Route: appointments/visit/268]
+in APPPATH\Controllers\AppointmentController.php on line 1169.
+ 1 APPPATH\Controllers\AppointmentController.php(1169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on bool', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 1169)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 12:49:34 --> ErrorException: Attempt to read property "id" on bool
+[Method: GET, Route: appointments/visit/268]
+in APPPATH\Controllers\AppointmentController.php on line 1170.
+ 1 APPPATH\Controllers\AppointmentController.php(1170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on bool', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 1170)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 12:49:46 --> ErrorException: Attempt to read property "uniq_id" on bool
+[Method: GET, Route: appointments/visit/268]
+in APPPATH\Controllers\AppointmentController.php on line 1176.
+ 1 APPPATH\Controllers\AppointmentController.php(1176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uniq_id" on bool', 'C:\\xampp\\htdocs\\hypersofts\\app\\Controllers\\AppointmentController.php', 1176)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 12:52:56 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: appointments/visit/268]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AppointmentController.php(1240): CodeIgniter\Model->update('appointments', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->visit('268')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:01:25 --> Error: Call to undefined method CodeIgniter\Session\Session::set_flashdata()
+[Method: GET, Route: service_types/delete/29]
+in APPPATH\Controllers\ServiceTypeController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->delete('29')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:02:23 --> Error: Call to undefined method CodeIgniter\Session\Session::set_flashdata()
+[Method: GET, Route: service_types/delete/29]
+in APPPATH\Controllers\ServiceTypeController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->delete('29')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:03:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "http://localhost/hypersofts/service_types/all" cannot be found.
+[Method: GET, Route: service_types/delete/29]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/hypersofts/service_types/all')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ServiceTypeController.php(115): redirect('http://localhost/hypersofts/service_types/all')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServiceTypeController->delete('29')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceTypeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:07:24 --> Error: Call to undefined function form_error()
+[Method: GET, Route: admin/clinic_info]
+in APPPATH\Views\admin\clinic_info.php on line 14.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/clinic_info', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('admin/clinic_info')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AdminController.php(848): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->clinic_info()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:10:56 --> Error: Call to a member function getError() on null
+[Method: GET, Route: admin/clinic_info]
+in APPPATH\Views\admin\clinic_info.php on line 14.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/clinic_info', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('admin/clinic_info')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AdminController.php(848): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->clinic_info()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 14:14:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4 in C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\hypersofts\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hypersofts\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hypersofts\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hypersofts\app\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hypersofts\app\Controllers\ConsumerController.php(47): App\Models\ElfinModel->get_result('consumers', Array, 'first_name ASC')
+#6 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(933): App\Controllers\ConsumerController->export_excel()
+#7 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsumerController))
+#8 C:\xampp\htdocs\hypersofts\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\hypersofts\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\hypersofts\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\hypersofts\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-05 14:14:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+[Method: GET, Route: consumers/export_excel]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 2 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ConsumerController.php(47): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsumerController->export_excel()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:14:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 4 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\ConsumerController.php(47): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsumerController->export_excel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsumerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:14:22 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `consumers`
+WHERE `status` = 1
+OR first_name ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `consumers`
+WHERE `status` = :status:
+OR first_name ASC', [...], false)
+ 5 APPPATH\Models\ElfinModel.php(230): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ConsumerController.php(47): App\Models\ElfinModel->get_result('consumers', [...], 'first_name ASC')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsumerController->export_excel()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsumerController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:16:34 --> Error: Call to undefined function form_error()
+[Method: GET, Route: admin/erooms/1]
+in APPPATH\Views\admin\rooms_edit.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/rooms_edit', [], true)
+ 4 APPPATH\Views\templates\admin_template.php(2): view('admin/rooms_edit')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hypersofts\\app\\Views\\templates\\admin_template.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('templates/admin_template', [], true)
+ 8 APPPATH\Controllers\AdminController.php(674): view('templates/admin_template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->erooms('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 14:18:32 --> Error: Call to undefined function App\Controllers\set_option()
+[Method: POST, Route: admin/change_timezone]
+in APPPATH\Controllers\AdminController.php on line 221.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->change_timezone()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

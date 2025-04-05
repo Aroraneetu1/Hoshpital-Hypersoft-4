@@ -109,7 +109,7 @@ $(document).ready(function(){
     var table = $(".table-db-js").DataTable({
         paging: false,
         // info: false,
-        sort: false,
+        sorting: false,
     });
     table.columns().every(function(){
         var that = this;

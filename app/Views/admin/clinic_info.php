@@ -11,23 +11,23 @@ echo '</pre>';*/
                 <div class="form-group">
                     <label>Hospital Name</label>
                     <input type="text" class="form-control" name="name" value="<?php echo $info->name; ?>"> 
-                    <span class="error"><?php echo form_error("name"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("name") : ''; ?></span>
                 </div>
                 <div class="form-group">
                     <label>Address</label>
                     <input type="text" class="form-control" name="address" value="<?php echo $info->address; ?>"> 
-                    <span class="error"><?php echo form_error("address"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("address") : ''; ?></span>
                 </div>
                 <div class="form-group">
                     <label>Contact</label>
                     <input type="text" class="form-control" name="contact" value="<?php echo $info->contact; ?>"> 
-                    <span class="error"><?php echo form_error("contact"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("contact") : ''; ?></span>
                 </div>
 
                 <div class="form-group">
                     <label>Upload Logo</label>
                     <input type="file" class="form-control" name="logo" > 
-                    <span class="error"><?php echo form_error("logo"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("logo") : ''; ?></span>
                 </div>
 
                 <div class="form-group">

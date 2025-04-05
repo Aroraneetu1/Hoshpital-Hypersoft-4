@@ -14,7 +14,7 @@ class ConsumerController extends BaseController
 
     public function __construct()
     {
-        helper(['form', 'url', 'elfin_helper']); // Load required helpers
+        helper(['form', 'url', 'elfin_helper']);
         $this->elfin_model = new ElfinModel();
         $this->session = session();
         $this->db = \Config\Database::connect();
@@ -44,7 +44,7 @@ class ConsumerController extends BaseController
             'Postal Code', 'Phone Number', 'Alternate Phone Number', 'Debit Amount'
         ]) . "\n";
 
-        $rows = $this->elfin_model->get_result('consumers', ['status' => 1], 'first_name ASC');
+        $rows = $this->elfin_model->get_result('consumers', ['status' => 1], [],['first_name'=>'ASC']);
         $body = [];
 
         if ($rows) {

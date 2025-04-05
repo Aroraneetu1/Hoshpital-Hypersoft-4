@@ -10,13 +10,13 @@
                 
                     <label>Room Name</label>
                     <input type="text" class="form-control" name="room_name" value="<?php echo $row->room_name; ?>"> 
-                    <span class="error"><?php echo form_error("room_name"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("room_name") : ''; ?></span>
                 </div>
 
                 <div class="col-md-4">
                     <label>Room Number</label>
                     <input type="text" class="form-control" name="room_number" value="<?php echo $row->room_number; ?>"> 
-                    <span class="error"><?php echo form_error("room_number"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("room_number") : ''; ?></span>
                 </div>
                 <div class="col-md-4">
                     <label>Category</label>
@@ -26,7 +26,7 @@
                             <option value="<?php echo $value->id;?>" <?php if($row->room_category == $value->id){echo 'selected';}?>><?php echo $value->name;?></option>
                         <?php } } ?>
                     </select>
-                    <span class="error"><?php echo form_error("room_category"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("room_category") : ''; ?></span>
                 </div>
                 
             </div>
@@ -35,13 +35,13 @@
                 <div class="col-md-4">
                     <label>Description</label>
                     <input type="text" class="form-control" name="description" value="<?php echo $row->description; ?>"> 
-                    <span class="error"><?php echo form_error("description"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("description") : ''; ?></span>
                 </div>
 
                 <div class="col-md-4">
                     <label>Room Rate</label>
                     <input type="text" class="form-control" name="room_rate" value="<?php echo $row->room_rate; ?>"> 
-                    <span class="error"><?php echo form_error("room_rate"); ?></span>
+                    <span class="error"><?php echo session('validation') ? session('validation')->getError("room_rate") : ''; ?></span>
                 </div>
                 
             </div>

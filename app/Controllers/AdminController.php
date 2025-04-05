@@ -551,7 +551,7 @@ public function addPaymentType()
 
             if ($this->elfin_model->insert_data('payment_types', $data)) {
                 session()->setFlashdata('success_msg', 'Payment type added successfully.');
-                return redirect()->to(get_site_url('admin/paymentTypes'));
+                return redirect()->to(get_site_url('admin/payment_types'));
             } else {
                 session()->setFlashdata('error_msg', 'Failed to add payment type.');
             }
@@ -580,7 +580,7 @@ public function editPaymentType($id = '')
 
         $this->elfin_model->update_data('payment_types', $data, ['id' => $id]);
         session()->setFlashdata('success_msg', 'Payment type updated successfully.');
-        return redirect()->to(get_site_url('admin/paymentTypes'));
+        return redirect()->to(get_site_url('admin/payment_types'));
     }
 
     return view('templates/admin_template', [

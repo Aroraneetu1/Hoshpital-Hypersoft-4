@@ -685,4 +685,27 @@ function get_date_format(){
 
 }
 
+function set_option($option = '', $value = '')
+{
+    $db = \Config\Database::connect();
+
+    $builder = $db->table('options');
+
+    $existing = $builder->where('option', $option)->get()->getRow();
+
+    $data = [
+        'option' => $option,
+        'value' => $value,
+    ];
+
+    if ($existing) {
+        $builder->where('option', $option)->update($data);
+    } else {
+        $builder->insert($data);
+    }
+
+    return true;
+}
+
+
 ?>

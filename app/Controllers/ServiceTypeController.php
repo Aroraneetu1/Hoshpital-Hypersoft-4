@@ -99,7 +99,7 @@ public function add()
                 'is_delete'    => 0,
             ];
 
-            $elfinModel->update('service_types', $update, ['id' => $id]);
+            $elfinModel->update_data('service_types', $update, ['id' => $id]);
             return redirect()->to(get_site_url('service_types/all'))->with('success_msg', 'Updated successfully.');
         }
 
@@ -109,5 +109,42 @@ public function add()
 
         return view('templates/admin_template', $data);
     }
+
+    public function delete($id=''){
+	    $this->elfinModel->update_data('service_types', array('is_delete' => 1), array('id' => $id));
+        return redirect()->to(get_site_url('service_types/all'))->with('success_msg', 'Deleted successfully.');
+	}
+
+	public function file_validation($post=NULL, $parameter){
+		list($file,$required,$types,$size) = explode(';',$parameter);
+		if($required != ''){ 
+			if($_FILES[$file]['name'] == ''){
+				$this->form_validation->set_message('file_validation','Please select an file to upload.');
+				return false;
+			}
+		}
+		
+		if($_FILES[$file]['name'] == ''){
+			return true;
+		}
+		
+		if($types != ''){
+			$format = strtolower(pathinfo($_FILES[$file]['name'],PATHINFO_EXTENSION));
+			$types_array = explode(',',$types);
+			if(!in_array($format,$types_array)){
+				$this->form_validation->set_message('file_validation','File format not allowed.');
+				return false;
+			}
+		}
+		
+		if($size != ''){
+			$actual_size = $_FILES[$file]['size']/1048576;
+			if($actual_size > $size){
+				$this->form_validation->set_message('file_validation','File not allowed which is large than '.$size.' MB.');
+				return FALSE;
+			}
+		}
+		return true;
+	}
 
 }

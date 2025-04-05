@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'https://clinic.hypersofts.com/';
+    public string $baseURL = 'https://hospital.hypersofts.com/';
     // public string $baseURL = 'http://localhost/hypersofts/';
 
     /**

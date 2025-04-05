@@ -109,6 +109,7 @@ $routes->group('appointments', ['namespace' => 'App\Controllers'], function ($ro
     $routes->get('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');
     $routes->post('visit/(:num)/(:any)', 'AppointmentController::visit/$1/$2');
     $routes->get('visit/(:num)', 'AppointmentController::visit/$1');
+    $routes->post('visit/(:num)', 'AppointmentController::visit/$1');
     
 });
 
@@ -171,6 +172,8 @@ $routes->group('service_types', function ($routes) {
     $routes->post('add', 'ServiceTypeController::add'); 
     $routes->get('edit/(:num)', 'ServiceTypeController::edit/$1');
     $routes->post('edit/(:num)', 'ServiceTypeController::edit/$1');
+    $routes->get('delete/(:num)', 'ServiceTypeController::delete/$1');
+    $routes->delete('delete/(:num)', 'ServiceTypeController::delete/$1');
 });
 
 $routes->group('supplier', function ($routes) {
@@ -182,3 +185,5 @@ $routes->group('supplier', function ($routes) {
     $routes->post('cancel', 'SupplierController::cancel');
 });
 
+$routes->get('cronjob/auto_update_discharge_date', 'Cronjob::auto_update_discharge_date');
+$routes->get('cronjob/manual_update_discharge_date', 'Cronjob::manual_update_discharge_date');
